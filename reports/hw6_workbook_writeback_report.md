@@ -1,11 +1,11 @@
 # HW6 Workbook Write-Back Report
 
-Generated: `2026-04-20T20:43:35+08:00`
+Generated: `2026-04-20T21:06:55+08:00`
 
 ## Summary
 
-- Workbook read: `course_materials/hw6/renamed/hw6_course_grade-workbook-20260420.xlsx`
-- Workbook written: `course_materials/hw6/renamed/(114下)深度學習成績和分組_hw6_scored.xlsx`
+- Workbook read: `/home/jnclaw/every_on_git_jnclaw/ns-practice-ta-grading-2026s/course_materials/hw6/raw/(114下)深度學習成績和分組.xlsx`
+- Workbook written: `/home/jnclaw/every_on_git_jnclaw/ns-practice-ta-grading-2026s/course_materials/hw6/renamed/(114下)深度學習成績和分組_hw6_scored.xlsx`
 - Rows updated: 21
 - Graded successfully: 21
 - Graded with manual review flag: 0

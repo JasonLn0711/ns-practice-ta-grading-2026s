@@ -21,7 +21,7 @@ from com.sun.star.beans import PropertyValue
 ROOT = Path(__file__).resolve().parents[1]
 HW6 = ROOT / "grading" / "hw6"
 REPORTS = ROOT / "reports"
-DEFAULT_INPUT = ROOT / "course_materials" / "hw6" / "renamed" / "hw6_course_grade-workbook-20260420.xlsx"
+DEFAULT_INPUT = ROOT / "course_materials" / "hw6" / "raw" / "(114下)深度學習成績和分組.xlsx"
 DEFAULT_OUTPUT = ROOT / "course_materials" / "hw6" / "renamed" / "(114下)深度學習成績和分組_hw6_scored.xlsx"
 IGNORE_NAMES = {"程式碼乾淨/註解/用心程度", "基本分", "程式不動(有努力)", "交白卷/缺交"}
 UNMATCHED_FIELDS = [
