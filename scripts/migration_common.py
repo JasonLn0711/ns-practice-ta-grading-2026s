@@ -29,7 +29,7 @@ def write_csv(path: Path, rows: list[dict[str, str]], fieldnames: list[str], app
     if apply:
         path.parent.mkdir(parents=True, exist_ok=True)
         with path.open("w", newline="", encoding="utf-8") as handle:
-            writer = csv.DictWriter(handle, fieldnames=fieldnames)
+            writer = csv.DictWriter(handle, fieldnames=fieldnames, lineterminator="\n")
             writer.writeheader()
             writer.writerows(rows)
 
@@ -145,4 +145,3 @@ def md_table(headers: list[str], rows: list[list[str]]) -> str:
     for row in rows:
         lines.append("| " + " | ".join(cell.replace("\n", " ") for cell in row) + " |")
     return "\n".join(lines)
-

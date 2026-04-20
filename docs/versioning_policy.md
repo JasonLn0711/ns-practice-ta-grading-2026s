@@ -41,4 +41,3 @@ git ls-files | rg 'submissions/.*/(raw|renamed|extracted)|course_materials/.*/(r
 
 The second command should show only allowed `.gitkeep` files. If a raw
 submission or bulky binary appears, stop and fix `.gitignore` before committing.
-

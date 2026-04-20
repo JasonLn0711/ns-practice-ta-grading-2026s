@@ -115,7 +115,7 @@ def update_mapping(rows: list[dict[str, str]], old_root: Path, target: Path, map
             }
         )
     with mapping.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 

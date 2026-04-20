@@ -58,4 +58,3 @@ python3 scripts/validate_grading_records.py --homework hw6
 - Review ambiguous Markdown references listed in
   `migration_reports/markdown_reference_index.csv`.
 - Keep the timestamped backup until the migration has been reviewed.
-
