@@ -58,6 +58,14 @@ def tag_table(counts: Counter[str]) -> str:
     return "\n".join(f"- `{tag}`: {count}" for tag, count in sorted(counts.items()))
 
 
+def evidence_table(rows: list[dict[str, str]]) -> str:
+    counts = Counter(row["evidence_level"] for row in rows)
+    lines = ["| Evidence level | Count |", "| --- | ---: |"]
+    for level in ["A", "B", "C", "D"]:
+        lines.append(f"| `{level}` | {counts.get(level, 0)} |")
+    return "\n".join(lines)
+
+
 def write(path: Path, text: str) -> None:
     path.write_text(text.rstrip() + "\n", encoding="utf-8")
 
@@ -73,16 +81,16 @@ def main() -> int:
 
     code_fields = [
         "architecture_score",
-        "graph_consistent_code_score",
-        "training_algorithm_score",
-        "result_quality_score",
-        "evidence_auditability_score",
+        "graph_code_alignment_score",
+        "training_method_score",
+        "result_score",
+        "evidence_score",
     ]
     figure_fields = [
-        "computational_graph_score",
-        "learned_filters_score",
+        "graph_score",
+        "filters_score",
         "feature_maps_score",
-        "figure_explainability_score",
+        "figure_evidence_score",
     ]
 
     code_report = f"""# HW6(code) Audit Report
@@ -91,10 +99,15 @@ Generated: `{NOW}`
 
 ## Summary
 
+- Total submissions represented in score file: {len(code_rows)}
 - Submissions graded: {len(code_rows)}
 - Complete Level A evidence rows: {sum(1 for row in code_rows if row['evidence_level'] == 'A')}
 - Manual review rows: {sum(1 for row in code_rows if yes(row['manual_review_needed']))}
-- Average HW6(code) score: {average(code_rows, 'code_total_score'):.2f}
+- Average HW6(code) score: {average(code_rows, 'hw6_code_score'):.2f}
+
+## Evidence Levels
+
+{evidence_table(code_rows)}
 
 ## Category Distribution
 
@@ -108,11 +121,18 @@ Generated: `{NOW}`
 
 {("- none recorded" if not manual else "- see `grading/hw6/manual_review_students.csv`")}
 
+## Unresolved Policy Issues
+
+- Late submission handling remains TODO until instructor confirmation.
+- Dense non-CNN submissions are not awarded full CNN architecture/filter/feature-map credit unless instructor policy changes.
+- Text-only or source-comment computational graphs remain partial-credit figure evidence unless accepted by the instructor.
+
 ## Policy Notes
 
 - Code score is independent from figure score.
 - Missing graph evidence can reduce graph-consistent implementation even when code runs.
 - Momentum requires historical accumulation, not just a claim or variable name.
+- Accuracy at or above `98%` does not override missing architecture, momentum, or graph-to-code evidence.
 """
 
     figure_report = f"""# HW6(figure) Audit Report
@@ -121,10 +141,15 @@ Generated: `{NOW}`
 
 ## Summary
 
+- Total submissions represented in score file: {len(figure_rows)}
 - Submissions graded: {len(figure_rows)}
 - Complete Level A evidence rows: {sum(1 for row in figure_rows if row['evidence_level'] == 'A')}
 - Manual review rows: {sum(1 for row in figure_rows if yes(row['manual_review_needed']))}
-- Average HW6(figure) score: {average(figure_rows, 'figure_total_score'):.2f}
+- Average HW6(figure) score: {average(figure_rows, 'hw6_figure_score'):.2f}
+
+## Evidence Levels
+
+{evidence_table(figure_rows)}
 
 ## Category Distribution
 
@@ -138,11 +163,18 @@ Generated: `{NOW}`
 
 {("- none recorded" if not manual else "- see `grading/hw6/manual_review_students.csv`")}
 
+## Unresolved Policy Issues
+
+- Late submission handling remains TODO until instructor confirmation.
+- Dense non-CNN submissions are not awarded full learned-filter/feature-map credit unless instructor policy changes.
+- Text-only or source-comment computational graphs remain partial-credit figure evidence unless accepted by the instructor.
+
 ## Policy Notes
 
 - Figure score is independent from code score.
 - A missing graph can make the figure score low even if code and accuracy are strong.
 - Filters and feature maps must be tied to the submitted model to receive full credit.
+- Visual polish does not replace true learned filters, intermediate feature maps, notation, or code alignment.
 """
 
     master_report = f"""# HW6 Master Dual-Score Audit Report
@@ -151,12 +183,21 @@ Generated: `{NOW}`
 
 ## Summary
 
+- Total submissions represented in dual-score files: {len(combined_rows)}
 - Graded successfully: {sum(1 for row in combined_rows if not yes(row['manual_review_needed']))}
 - Graded with manual review flag: {sum(1 for row in combined_rows if yes(row['manual_review_needed']))}
 - Not graded due to missing evidence: {sum(1 for row in unmatched if row.get('status') == 'not_graded_due_to_missing_evidence')}
 - Unmatched in workbook: {sum(1 for row in unmatched if row.get('status') == 'graded_row_unmatched_in_workbook')}
 - Average HW6(code): {average(combined_rows, 'hw6_code_score'):.2f}
 - Average HW6(figure): {average(combined_rows, 'hw6_figure_score'):.2f}
+
+## Evidence Levels - Code
+
+{evidence_table(code_rows)}
+
+## Evidence Levels - Figure
+
+{evidence_table(figure_rows)}
 
 ## Code Score Distribution
 
@@ -180,6 +221,14 @@ Generated: `{NOW}`
 - Text-only graph and source-comment graph formats remain policy-sensitive.
 - Dense non-CNN submissions are not awarded full CNN filter/feature-map credit unless the instructor changes policy.
 
+## Rubric Interpretation Notes For Future Consistency
+
+- `HW6(code)` and `HW6(圖)` are independent 100-point scores.
+- No score should be awarded without inspectable evidence.
+- Every non-full category must have a deduction tag and written reason.
+- Accuracy can earn result-band points only when it is credible and traceable to the submitted HW6 model.
+- Figure credit requires graph/filter/feature-map evidence, not just attractive screenshots.
+
 ## Audit Sources
 
 - `grading/hw6/code_scores.csv`
@@ -187,7 +236,7 @@ Generated: `{NOW}`
 - `grading/hw6/combined_summary.csv`
 - `grading/hw6/code_deduction_log.csv`
 - `grading/hw6/figure_deduction_log.csv`
-- `grading/hw6/student_notes/`
+- `grading/hw6/feedback/`
 """
 
     REPORTS.mkdir(parents=True, exist_ok=True)
