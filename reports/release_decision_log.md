@@ -17,6 +17,8 @@ was or was not made.
 - If a score changes, update the score row, student note, and deduction log or adjustment note.
 - Adjust only affected rows; do not reopen unrelated students for custom exceptions.
 - Keep raw submissions and bulky files out of Git; keep score/evidence/decision metadata versioned.
+- Treat the generated HW6 scored workbook as a draft until instructor approval;
+  the original workbook remains untouched.
 
 ## Pending Decisions
 
@@ -51,4 +53,8 @@ Notes:
 
 ## Change Ledger
 
-No release-policy score changes have been applied yet.
+- 2026-04-20: HW6 was revised into independent `HW6(code)` and
+  `HW6(figure)` score records. A separate local scored workbook copy was
+  generated from those records, with `21` exact name matches updated and `4`
+  no-evidence workbook students left unchanged. No instructor release-policy
+  score changes have been applied yet.
