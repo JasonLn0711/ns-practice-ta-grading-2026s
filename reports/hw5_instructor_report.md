@@ -1,11 +1,11 @@
 # HW5 Instructor Report
 
-Generated: 2026-04-20T19:38:32
+Generated: 2026-04-20T19:43:28
 
 ## Overview
 
-- Number of submissions graded: 12
-- Average score: 89.58
+- Number of submissions graded: 16
+- Average score: 90.50
 - Manual reviews: 0
 
 ## Distribution By Category
@@ -13,18 +13,18 @@ Generated: 2026-04-20T19:38:32
 | Category | Average |
 | --- | ---: |
 | completeness_score | 10.00 |
-| requirement_score | 26.67 |
-| technical_score | 27.17 |
-| result_score | 13.67 |
-| evidence_score | 12.08 |
+| requirement_score | 26.75 |
+| technical_score | 27.25 |
+| result_score | 14.00 |
+| evidence_score | 12.50 |
 
 ## Common Deduction Reasons
 
 - ACCURACY_BELOW_TARGET: 5
-- CODE_INCOMPLETE: 6
-- NO_HYPERPARAMETER_SEARCH_EVIDENCE: 5
-- TEST_PIPELINE_UNCLEAR: 2
-- WEAK_AUDIT_EVIDENCE: 7
+- CODE_INCOMPLETE: 7
+- NO_HYPERPARAMETER_SEARCH_EVIDENCE: 6
+- TEST_PIPELINE_UNCLEAR: 4
+- WEAK_AUDIT_EVIDENCE: 8
 
 ## Manual Reviews
 
