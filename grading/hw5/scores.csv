@@ -1,1 +1,2 @@
 student_id,student_name,hw_id,submission_path,completeness_score,requirement_score,technical_score,result_score,evidence_score,penalty_score,total_score,evidence_level,manual_review_needed,deduction_summary,grader,graded_at
+314264011,許浩哲,hw5,submissions/hw5/renamed/hw5_314264011_01_314264011-hw-5.ipynb,10,30,26,15,15,0,96,A,no,NO_HYPERPARAMETER_SEARCH_EVIDENCE,Jason,2026-04-20T19:23:06+08:00

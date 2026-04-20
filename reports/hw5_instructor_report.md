@@ -1,31 +1,30 @@
 # HW5 Instructor Report
 
-Generated: TODO
+Generated: 2026-04-20T19:24:49
 
 ## Overview
 
-- Number of submissions: TODO
-- Number graded: TODO
-- Average score: TODO
-- Manual reviews: TODO
+- Number of submissions graded: 1
+- Average score: 96.00
+- Manual reviews: 0
 
 ## Distribution By Category
 
-| Category | Average | Common issue |
-| --- | ---: | --- |
-| Submission completeness | TODO | TODO |
-| Requirement fulfillment | TODO | TODO |
-| Technical correctness | TODO | TODO |
-| Result quality | TODO | TODO |
-| Evidence and auditability | TODO | TODO |
+| Category | Average |
+| --- | ---: |
+| completeness_score | 10.00 |
+| requirement_score | 30.00 |
+| technical_score | 26.00 |
+| result_score | 15.00 |
+| evidence_score | 15.00 |
 
 ## Common Deduction Reasons
 
-- TODO
+- NO_HYPERPARAMETER_SEARCH_EVIDENCE: 1
 
-## Suspicious Patterns
+## Manual Reviews
 
-- TODO
+- none recorded
 
 ## Policy Issues Needing Instructor Decision
 

@@ -1,1 +1,2 @@
 student_id,hw_id,deduction_tag,category,points_deducted,evidence_path,note,manual_review_needed,grader,recorded_at
+314264011,hw5,NO_HYPERPARAMETER_SEARCH_EVIDENCE,technical_score,4,submissions/hw5/renamed/hw5_314264011_01_314264011-hw-5.ipynb,"Notebook shows final configuration values and training logs, but no comparison/search/trial evidence for hyperparameter selection.",no,Jason,2026-04-20T19:23:06+08:00
