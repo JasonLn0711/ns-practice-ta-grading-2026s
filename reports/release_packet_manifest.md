@@ -21,21 +21,21 @@ Send or paste these first:
 | `reports/hw5_instructor_report.md` | HW5 summary, category averages, common deductions, policy issues. | yes |
 | `reports/hw6_master_audit_report.md` | HW6 dual-score summary, category averages, common deductions, and workbook status. | yes |
 | `reports/hw6_code_audit_report.md` | HW6(code) category averages and code deduction patterns. | yes |
-| `reports/hw6_figure_audit_report.md` | HW6(figure) category averages and figure deduction patterns. | yes |
+| `reports/hw6_figure_audit_report.md` | HW6(圖) category averages and figure deduction patterns. | yes |
 
 Keep these available but do not send unless requested:
 
 | File or folder | Purpose | Reason not default |
 | --- | --- | --- |
 | `grading/hw5/scores.csv` | HW5 score rows. | contains student-level grading data |
-| `grading/hw6/scores.csv` | Historical HW6 single-score rows. | contains student-level grading data |
 | `grading/hw6/code_scores.csv` | HW6(code) score rows. | contains student-level grading data |
-| `grading/hw6/figure_scores.csv` | HW6(figure) score rows. | contains student-level grading data |
+| `grading/hw6/figure_scores.csv` | HW6(圖) score rows. | contains student-level grading data |
 | `grading/hw6/combined_summary.csv` | HW6 dual-score summary used for workbook write-back. | contains student-level grading data |
 | `grading/hw5/deduction_log.csv` | HW5 deduction evidence. | detailed audit evidence |
-| `grading/hw6/deduction_log.csv` | HW6 deduction evidence. | detailed audit evidence |
+| `grading/hw6/code_deduction_log.csv` | HW6(code) deduction evidence. | detailed audit evidence |
+| `grading/hw6/figure_deduction_log.csv` | HW6(圖) deduction evidence. | detailed audit evidence |
 | `grading/hw5/student_notes/` | HW5 per-student audit notes. | student-level detail |
-| `grading/hw6/student_notes/` | HW6 per-student audit notes. | student-level detail |
+| `grading/hw6/feedback/` | HW6 per-student dual-score audit notes. | student-level detail |
 
 Do not send:
 
@@ -54,7 +54,6 @@ Do not send:
 | HW5 scores complete | done | `grading/hw5/scores.csv` has 21 rows |
 | HW6 dual scores complete | done | `grading/hw6/code_scores.csv` and `grading/hw6/figure_scores.csv` each have 21 rows |
 | HW5 validation | passed | `python3 scripts/validate_grading_records.py --homework hw5` |
-| HW6 legacy validation | passed | `python3 scripts/validate_grading_records.py --homework hw6` |
 | HW6 dual validation | passed | `python3 scripts/validate_hw6_dual_grading.py` |
 | HW6 workbook write-back | done | `reports/hw6_workbook_writeback_report.md` |
 | Instructor policy confirmation | pending | `reports/release_decision_log.md` |
@@ -80,16 +79,15 @@ Do not send:
 
 ```bash
 python3 scripts/validate_grading_records.py --homework hw5
-python3 scripts/validate_grading_records.py --homework hw6
-python3 scripts/summarize_scores.py --homework hw5
-python3 scripts/summarize_scores.py --homework hw6
+python3 scripts/validate_hw6_dual_grading.py
+python3 scripts/build_hw6_dual_reports.py
 ```
 
 5. Generate feedback only after policy confirmation:
 
 ```bash
 python3 scripts/generate_student_feedback.py --homework hw5 --apply
-python3 scripts/generate_student_feedback.py --homework hw6 --apply
+# HW6 dual-score feedback already lives under grading/hw6/feedback/.
 ```
 
 6. Commit the final release state before importing to LMS.

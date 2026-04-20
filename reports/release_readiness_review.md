@@ -11,14 +11,14 @@ Both homework grading passes are complete from the grading-record side.
 | Homework / score | Score rows | Evidence rows | Average | Manual reviews | Status |
 | --- | ---: | ---: | ---: | ---: | --- |
 | HW5 | 21 | 21 | 90.76 | 0 | ready for instructor policy review |
-| HW6(code) | 21 | 21 | 88.90 | 0 | workbook copy written |
-| HW6(figure) | 21 | 21 | 78.38 | 0 | workbook copy written |
+| HW6(code) | 21 | 21 | 88.38 | 0 | workbook copy written |
+| HW6(圖) | 21 | 21 | 78.38 | 0 | workbook copy written |
 
 Validation commands passed:
 
 - `python3 scripts/validate_grading_records.py --homework hw5`
-- `python3 scripts/validate_grading_records.py --homework hw6`
 - `python3 scripts/validate_hw6_dual_grading.py`
+- `python3 scripts/build_hw6_dual_reports.py`
 - `python3 -m py_compile scripts/*.py`
 
 ## Release Gate
@@ -59,7 +59,7 @@ Current HW5 policy used in grading:
 Current HW6 policy used in grading:
 
 - HW6 is now represented by two independent 100-point scores:
-  `HW6(code)` and `HW6(figure)`.
+  `HW6(code)` and `HW6(圖)`.
 - Separate image/PDF graphs and rendered notebook graphs received full graph credit when aligned with code.
 - Text-only graph notation or code comments received partial graph credit.
 - Missing graph artifacts received zero graph credit.
@@ -80,7 +80,7 @@ Only adjust these if the instructor changes policy. Otherwise leave the current 
 
 ### HW6 Policy-Sensitive Students
 
-| Student ID | Current issue | HW6(code) | HW6(figure) | Possible policy decision |
+| Student ID | Current issue | HW6(code) | HW6(圖) | Possible policy decision |
 | --- | --- | ---: | ---: | --- |
 | 314264011 | two hidden layers total; graph otherwise complete | 97 | 100 | add code architecture credit if instructor accepts two hidden layers total |
 | 314351006 | graph/code hidden-layer mismatch | 86 | 80 | adjust only if instructor accepts code architecture and graph mismatch policy |
@@ -101,14 +101,13 @@ Only adjust these if the instructor changes policy. Otherwise leave the current 
 - `reports/hw6_master_audit_report.md`
 - `reports/hw6_workbook_writeback_report.md`
 - `grading/hw5/scores.csv`
-- `grading/hw6/scores.csv`
 - `grading/hw6/code_scores.csv`
 - `grading/hw6/figure_scores.csv`
 - `grading/hw6/combined_summary.csv`
 - `grading/hw5/deduction_log.csv`
-- `grading/hw6/deduction_log.csv`
 - `grading/hw6/code_deduction_log.csv`
 - `grading/hw6/figure_deduction_log.csv`
+- `grading/hw6/feedback/`
 
 ## Recommended Next Action
 

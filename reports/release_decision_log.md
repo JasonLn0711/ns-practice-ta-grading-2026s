@@ -54,7 +54,7 @@ Notes:
 ## Change Ledger
 
 - 2026-04-20: HW6 was revised into independent `HW6(code)` and
-  `HW6(figure)` score records. A separate local scored workbook copy was
+  `HW6(圖)` score records. A separate local scored workbook copy was
   generated from those records, with `21` exact name matches updated and `4`
   no-evidence workbook students left unchanged. No instructor release-policy
   score changes have been applied yet.

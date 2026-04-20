@@ -1,38 +1,65 @@
 # HW6 Instructor Report
 
-Generated: 2026-04-20T20:09:51
+Generated: `2026-04-20`
 
 ## Overview
 
-- Number of submissions graded: 21
-- Average score: 89.43
-- Manual reviews: 0
+HW6 is now reported as two independent official workbook scores:
 
-## Distribution By Category
+- `HW6(code)`: implementation, graph-to-code consistency, training method, result quality, and evidence.
+- `HW6(圖)`: computational graph, learned filters, intermediate feature maps, and figure evidence.
+
+| Score | Graded rows | Average | Manual reviews |
+| --- | ---: | ---: | ---: |
+| HW6(code) | 21 | 88.38 | 0 |
+| HW6(圖) | 21 | 78.38 | 0 |
+
+Workbook write-back status:
+
+- Rows updated in copied workbook: `21`
+- Workbook rows left unchanged due to missing reliable HW6 evidence: `4`
+- Unmatched graded students in workbook: `0`
+
+## Category Averages
+
+### HW6(code)
 
 | Category | Average |
 | --- | ---: |
-| completeness_score | 9.19 |
-| architecture_score | 14.05 |
-| graph_score | 9.24 |
-| training_score | 19.52 |
-| result_score | 9.95 |
-| visualization_score | 14.38 |
-| evidence_score | 13.10 |
+| architecture_score | 23.38 |
+| graph_code_alignment_score | 12.43 |
+| training_method_score | 24.38 |
+| result_score | 19.38 |
+| evidence_score | 8.81 |
+
+### HW6(圖)
+
+| Category | Average |
+| --- | ---: |
+| graph_score | 24.14 |
+| filters_score | 18.48 |
+| feature_maps_score | 24.24 |
+| figure_evidence_score | 11.52 |
 
 ## Common Deduction Reasons
 
-- ACCURACY_BELOW_TARGET: 1
-- CODE_INCOMPLETE: 9
-- COMPUTATIONAL_GRAPH_MISSING: 14
-- FEATURE_MAP_MISSING: 1
-- FILTER_PLOT_MISSING: 2
-- MISSING_REQUIRED_FILE: 9
-- MOMENTUM_NOT_IMPLEMENTED: 1
+### HW6(code)
 
-## Manual Reviews
+- `CODE_GRAPH_NOTATION_MISMATCH`: 11
+- `CODE_RESULT_BAND_BELOW_FULL`: 6
+- `CODE_ARCH_REPLACEMENT_INCOMPLETE`: 4
+- `CODE_ACCURACY_BELOW_TARGET`: 1
+- `CODE_MOMENTUM_MISSING`: 1
 
-- none recorded
+### HW6(圖)
+
+- `FIG_LABELING_INSUFFICIENT`: 11
+- `FIG_GRAPH_MISSING`: 7
+- `FIG_GRAPH_INCOMPLETE`: 3
+- `FIG_FEATURE_MAPS_UNCLEAR`: 2
+- `FIG_FILTERS_MISSING`: 1
+- `FIG_FILTERS_UNCLEAR`: 1
+- `FIG_GRAPH_CODE_MISMATCH`: 1
 
 ## Policy Issues Needing Instructor Decision
 
@@ -41,3 +68,13 @@ Generated: 2026-04-20T20:09:51
 - Confirm whether external frameworks such as PyTorch should receive full credit when architecture, momentum, graph, result, and visualization evidence are present.
 - Confirm that dense non-CNN submissions should not receive full architecture/filter/feature-map credit even if they reach the accuracy target.
 - Confirm late-policy handling before importing final grades into the LMS.
+
+## Audit Sources
+
+- `reports/hw6_master_audit_report.md`
+- `reports/hw6_code_audit_report.md`
+- `reports/hw6_figure_audit_report.md`
+- `reports/hw6_workbook_writeback_report.md`
+- `grading/hw6/code_scores.csv`
+- `grading/hw6/figure_scores.csv`
+- `grading/hw6/combined_summary.csv`

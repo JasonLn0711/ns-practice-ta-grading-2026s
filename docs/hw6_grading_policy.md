@@ -3,7 +3,7 @@
 HW6 is graded as two independent scores:
 
 - `HW6(code)`: 100 points
-- `HW6(figure)`: 100 points
+- `HW6(圖)`: 100 points
 
 Do not average or merge these scores inside the grading workspace. The workbook
 write-back fills `HW6(圖)` and `HW6(code)` separately.

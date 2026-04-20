@@ -21,8 +21,8 @@ Current grading status:
 | Homework / score | Graded submissions | Average | Manual review holds |
 | --- | ---: | ---: | ---: |
 | HW5 | 21 | 90.76 | 0 |
-| HW6(code) | 21 | 88.90 | 0 |
-| HW6(figure) | 21 | 78.38 | 0 |
+| HW6(code) | 21 | 88.38 | 0 |
+| HW6(圖) | 21 | 78.38 | 0 |
 
 The grading policy I used was:
 
@@ -57,7 +57,8 @@ HW6:
 My default recommendation is to keep the current grading policy unless you want
 a different interpretation. If you approve the current policy, I will freeze the
 score CSVs and use the generated workbook copy with separate `HW6(圖)` and
-`HW6(code)` columns for release preparation.
+`HW6(code)` columns for release preparation. Four workbook rows currently remain
+unchanged because no reliable HW6 grading evidence row exists for those students.
 
 I can also provide the instructor reports, score CSVs, deduction logs, or
 student-level notes if you would like to inspect any specific cases.

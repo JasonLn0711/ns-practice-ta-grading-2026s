@@ -99,13 +99,13 @@ HW6 dual-score workflow:
 python3 scripts/rebuild_hw6_dual_grading.py
 python3 scripts/validate_hw6_dual_grading.py
 python3 scripts/build_hw6_dual_reports.py
-python3 scripts/write_hw6_scores_to_workbook.py --dry-run --input course_materials/hw6/renamed/hw6_course_grade-workbook-20260420.xlsx
-python3 scripts/write_hw6_scores_to_workbook.py --apply --input course_materials/hw6/renamed/hw6_course_grade-workbook-20260420.xlsx --output "course_materials/hw6/renamed/(114下)深度學習成績和分組_hw6_scored.xlsx"
+python3 scripts/write_hw6_scores_to_workbook.py --dry-run
+python3 scripts/write_hw6_scores_to_workbook.py --apply
 ```
 
 Validation enforces the grading discipline: no score without evidence metadata,
 no non-full score without a written deduction reason, evidence-level caps, and a
-per-student note for every graded row.
+per-student feedback/audit note for every graded row.
 
 ## Manual Judgment
 
