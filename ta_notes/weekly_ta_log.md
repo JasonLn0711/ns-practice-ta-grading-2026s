@@ -10,4 +10,6 @@ Use this for TA work summaries only. Do not store detailed student-sensitive rev
 - HW6 assignment spec, Lecture 6 CNN slides, and CNN MNIST batch/momentum notebooks copied into `course_materials/hw6/` with raw originals and renamed working copies.
 - Actual HW5/HW6 E3 submission exports copied into `submissions/<hw>/`.
 - Waiting for instructor-confirmed rubric weights, late policy, and expected grading turnaround.
-- E3 submission ZIP/PDF import workflow added. Use private `student_file_map.csv` per homework to map submitted filenames to student IDs; do not commit identity-bearing maps.
+- E3 submission ZIP/PDF import workflow added. In this standalone private repo,
+  version `student_file_map.csv` and submission `rename_map.csv` for auditability;
+  keep raw, renamed, and extracted submission files ignored.
