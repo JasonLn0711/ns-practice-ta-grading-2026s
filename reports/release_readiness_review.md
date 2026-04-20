@@ -86,6 +86,8 @@ Only adjust these if the instructor changes policy. Otherwise leave the current 
 
 ## Files To Review Before Release
 
+- `reports/instructor_policy_confirmation_packet.md`
+- `reports/release_decision_log.md`
 - `reports/hw5_instructor_report.md`
 - `reports/hw6_instructor_report.md`
 - `grading/hw5/scores.csv`
@@ -95,7 +97,9 @@ Only adjust these if the instructor changes policy. Otherwise leave the current 
 
 ## Recommended Next Action
 
-Send the instructor the two instructor reports plus the HW5/HW6 policy questions
-above. If the instructor accepts the current policy, freeze the score CSVs and
-generate student-facing feedback. If the instructor changes policy, adjust only
-the targeted rows listed above and record the change in a new commit.
+Send `reports/instructor_policy_confirmation_packet.md` to the instructor, with
+the two instructor reports available as supporting attachments. Record the reply
+in `reports/release_decision_log.md`. If the instructor accepts the current
+policy, freeze the score CSVs and generate student-facing feedback. If the
+instructor changes policy, adjust only the targeted rows listed above and record
+the change in a new commit.
