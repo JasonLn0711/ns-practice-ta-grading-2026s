@@ -1,12 +1,12 @@
 # Final Release Gate Report
 
-Generated: `2026-04-20T21:43:38+08:00`
+Generated: `2026-04-20T21:47:10+08:00`
 Release ready: `no`
 
 ## Summary
 
-- Passed checks: `9`
-- Blocking checks: `4`
+- Passed checks: `10`
+- Blocking checks: `3`
 - Failed checks: `0`
 
 ## Checks
@@ -20,7 +20,7 @@ Release ready: `no`
 | Git whitespace check | `pass` | ok |
 | HW6 workbook copy | `pass` | output workbook exists and is ignored |
 | Instructor packet | `pass` | 5 files present and ignored |
-| Instructor recipient | `blocked` | recipient email not confirmed in outbox |
+| Instructor recipient | `pass` | recipient email recorded in outbox |
 | Tracked private artifacts | `pass` | no tracked raw/renamed/extracted files |
 | Git status | `pass` | working tree clean |
 | Instructor decisions | `blocked` | 10 pending decisions |
@@ -33,7 +33,7 @@ Do not release grades yet. Resolve all `blocked` and `fail` checks first.
 
 ## Next Action
 
-- If the instructor recipient is still blocked, confirm the address from E3, a prior course email, or the instructor directly.
-- Once the recipient is confirmed, send `reports/instructor_confirmation_outbox.md` with only the sanitized packet files.
+- Send `reports/instructor_confirmation_outbox.md` to the recorded recipient with only the sanitized packet files.
+- Record the completed send event in `reports/release_decision_log.md`.
 - After the instructor replies, use `reports/post_instructor_reply_runbook.md`.
 - Re-run this script after recording the reply and applying any policy changes.
