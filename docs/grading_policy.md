@@ -24,6 +24,7 @@ deductions were applied.
 
 For each graded submission, record:
 
+- submission path or mapping row
 - score breakdown by rubric category
 - evidence level: `A`, `B`, or `C`
 - deduction tags and short deduction notes
@@ -34,6 +35,22 @@ For each graded submission, record:
 The score CSV is the grading ledger. Per-student notes explain the evidence and
 deductions behind the row. Instructor reports summarize patterns without
 requiring the instructor to inspect every file.
+
+## Non-Negotiable Grading Gates
+
+- A row with a `total_score` must also have `submission_path`,
+  `evidence_level`, `grader`, and `graded_at`.
+- A non-full category score must have a deduction reason.
+- A penalty score must have a deduction reason.
+- Evidence level caps must be respected:
+  - Level A: evidence category may receive full credit.
+  - Level B: evidence category max `10 / 15`.
+  - Level C: evidence category max `5 / 15`.
+- If required evidence is missing or unverifiable, do not award full points for
+  that item even if the final accuracy target is reached.
+- If plagiarism is suspected, create a manual review note and use
+  `POSSIBLE_COPYING_MANUAL_REVIEW`; do not decide guilt without instructor
+  confirmation.
 
 ## What Counts As Evidence
 

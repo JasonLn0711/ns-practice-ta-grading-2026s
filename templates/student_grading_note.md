@@ -1,41 +1,65 @@
 # Student Grading Note
 
-Student: `<student_id>`  
-Homework: `<hw_id>`  
-Submission path: `<submission_path>`  
-Grader: `<grader>`  
-Graded at: `<graded_at>`  
+Student: `<student_id>`
+Homework: `<hw_id>`
+Submission path: `<submission_path>`
+Grader: `<grader>`
+Graded at: `<graded_at>`
+Evidence level: `A / B / C`
 Manual review needed: `yes/no`
+
+## Grading Discipline Checklist
+
+- [ ] Every awarded category score cites evidence.
+- [ ] Every non-full category score has a deduction tag and written reason.
+- [ ] Required missing/unverifiable items did not receive full credit.
+- [ ] Accuracy credit did not override missing development, architecture, graph,
+      or visualization evidence.
+- [ ] Manual review note created if plagiarism/similarity is suspected.
 
 ## Score Breakdown
 
-| Category | Score | Max | Evidence |
+| Rubric item | Score | Max | Evidence path / output / note |
 | --- | ---: | ---: | --- |
-| Completeness |  |  |  |
-| Requirement / Architecture / Graph / Training |  |  |  |
-| Technical / Result / Visualization |  |  |  |
+| Submission completeness |  |  |  |
+| Requirement fulfillment / Architecture |  |  |  |
+| Technical correctness / Graph / Training |  |  |  |
+| Result quality |  |  |  |
+| Visualization, if HW6 |  |  |  |
 | Evidence and auditability |  |  |  |
 | Penalty |  |  |  |
 | Total |  | 100 |  |
 
 ## Evidence Observed
 
-- Code/notebook:
-- Logs/output:
-- Result:
-- Configuration/model:
-- Required plots/graph:
+| Evidence type | Observed? | Path / cell / output reference | Notes |
+| --- | --- | --- | --- |
+| Code/notebook |  |  |  |
+| Configuration / architecture |  |  |  |
+| Training method |  |  |  |
+| Test accuracy output |  |  |  |
+| Logs / notebook outputs |  |  |  |
+| Computational graph, if HW6 |  |  |  |
+| Learned filters, if HW6 |  |  |  |
+| Feature maps, if HW6 |  |  |  |
 
 ## Deductions Applied
 
-| Tag | Category | Points | Reason |
-| --- | --- | ---: | --- |
-|  |  |  |  |
+| Tag | Rubric item | Points deducted | Evidence reviewed | Reason |
+| --- | --- | ---: | --- | --- |
+|  |  |  |  |  |
 
 ## Unresolved Ambiguity
 
-- 
+-
+
+## Manual Review
+
+- Needed: yes / no
+- Reason:
+- Instructor question:
+- Temporary action:
 
 ## Final Summary
 
-- 
+-
