@@ -19,14 +19,31 @@ Manual review needed: `yes/no`
 
 ## Score Breakdown
 
+Use the rows that match the score CSV for the homework being graded.
+
+HW5:
+
 | Rubric item | Score | Max | Evidence path / output / note |
 | --- | ---: | ---: | --- |
-| Submission completeness |  |  |  |
-| Requirement fulfillment / Architecture |  |  |  |
-| Technical correctness / Graph / Training |  |  |  |
-| Result quality |  |  |  |
-| Visualization, if HW6 |  |  |  |
-| Evidence and auditability |  |  |  |
+| Submission completeness |  | 10 |  |
+| Requirement fulfillment |  | 30 |  |
+| Technical correctness |  | 30 |  |
+| Result quality |  | 15 |  |
+| Evidence and auditability |  | 15 |  |
+| Penalty |  |  |  |
+| Total |  | 100 |  |
+
+HW6:
+
+| Rubric item | Score | Max | Evidence path / output / note |
+| --- | ---: | ---: | --- |
+| Submission completeness |  | 10 |  |
+| Architecture modification correctness |  | 15 |  |
+| Computational graph correctness |  | 15 |  |
+| Training method correctness |  | 20 |  |
+| Result quality |  | 10 |  |
+| Visualization requirements |  | 15 |  |
+| Evidence and auditability |  | 15 |  |
 | Penalty |  |  |  |
 | Total |  | 100 |  |
 
