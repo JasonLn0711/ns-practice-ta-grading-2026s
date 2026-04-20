@@ -62,14 +62,18 @@ Pre-send verification:
   reliable email address. The instructor packet remains ready, but sending is
   blocked until the recipient address is confirmed from E3, a prior course
   email, or the instructor directly.
+- 2026-04-20: Gmail search found prior messages from `吳 (Wu)育德 (Yu-Te)
+  <ytwu@nycu.edu.tw>`, and the inspected E3 course announcement confirms the
+  course lecturer context as `吳育德`. Recipient is now confirmed; sending is
+  still blocked until the email is actually sent and logged.
 
 ```text
 Date sent:
-Recipient:
-Subject:
+Recipient: 吳育德老師 <ytwu@nycu.edu.tw>
+Subject: BEBN20024 HW5/HW6 grading completed - policy confirmation needed before release
 Files sent or pasted:
-Pending decisions:
-Notes:
+Pending decisions: HW5-D1 through HW5-D5, HW6-D1 through HW6-D5
+Notes: Waiting for instructor policy confirmation before student-facing release or LMS import.
 ```
 
 ## Reply Processing

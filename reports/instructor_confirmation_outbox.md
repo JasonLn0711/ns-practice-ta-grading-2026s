@@ -13,11 +13,11 @@ for them through an appropriate channel.
 
 ## Recipient
 
-TODO: add confirmed instructor email address before sending.
+吳育德老師 <ytwu@nycu.edu.tw>
 
-Local source check: the inspected syllabus confirms lecturer `吳育德` but does
-not expose a reliable email address. Confirm the address from E3, a prior course
-email, or the instructor directly before sending.
+Local source check: Gmail search found prior messages from `吳 (Wu)育德
+(Yu-Te) <ytwu@nycu.edu.tw>`, and the inspected E3 course announcement confirms
+the course lecturer context as `吳育德`.
 
 ## Subject
 

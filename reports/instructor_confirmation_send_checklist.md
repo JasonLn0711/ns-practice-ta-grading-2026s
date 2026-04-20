@@ -61,12 +61,13 @@ through a secure channel:
 
 ## Pre-Send Steps
 
-- [ ] Confirm the instructor recipient address from E3, a prior course email, or
-  the instructor directly. The inspected syllabus confirms lecturer `吳育德` but
-  does not expose a reliable email address.
+- [x] Confirm the instructor recipient address from E3, a prior course email, or
+  the instructor directly. Gmail search found prior messages from `吳 (Wu)育德
+  (Yu-Te) <ytwu@nycu.edu.tw>`, and the inspected E3 course announcement confirms
+  the course lecturer context as `吳育德`.
 - [ ] Open `reports/instructor_confirmation_outbox.md`.
 - [ ] If needed, compare it against `reports/instructor_email_draft.md`.
-- [ ] Confirm the recipient and course name.
+- [x] Confirm the recipient and course name.
 - [ ] Paste the email body into the mail client.
 - [ ] Attach files from `release_packets/instructor_confirmation_2026-04-20/`, or paste the policy packet inline.
 - [ ] Verify the email includes these current summary numbers:

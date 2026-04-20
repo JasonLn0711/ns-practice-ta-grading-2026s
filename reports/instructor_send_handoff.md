@@ -2,7 +2,7 @@
 
 Generated: `2026-04-20`
 Prepared by: `Jason`
-Status: `ready except recipient address`
+Status: `recipient confirmed / ready for human send`
 
 ## Purpose
 
@@ -18,24 +18,23 @@ instructor confirms policy and late-policy handling.
   original workbook remains untouched.
 - The sanitized instructor packet is ready at
   `release_packets/instructor_confirmation_2026-04-20/`.
-- The syllabus confirms lecturer name `吳育德` but does not expose a reliable
-  email address in the inspected local text.
+- Recipient confirmed from Gmail search: `吳 (Wu)育德 (Yu-Te)
+  <ytwu@nycu.edu.tw>`. The inspected E3 announcement also confirms the course
+  lecturer context as `吳育德`.
 
 ## Immediate Next Action
 
-1. Confirm the instructor recipient address from E3, a prior course email, or
-   the instructor directly.
-2. Open `reports/instructor_confirmation_outbox.md`.
-3. Replace the recipient TODO with the confirmed address.
-4. Paste the subject and body into the mail client.
-5. Attach only the sanitized files from
+1. Open `reports/instructor_confirmation_outbox.md`.
+2. Paste the subject and body into the mail client.
+3. Send to `吳育德老師 <ytwu@nycu.edu.tw>`.
+4. Attach only the sanitized files from
    `release_packets/instructor_confirmation_2026-04-20/`, or paste the policy
    packet inline.
-6. Confirm no raw submissions, extracted archives, per-student notes, score CSVs,
+5. Confirm no raw submissions, extracted archives, per-student notes, score CSVs,
    or workbook binaries are attached by default.
-7. Send the email.
-8. Record the send event in `reports/release_decision_log.md`.
-9. Wait for the instructor reply before changing scores or releasing feedback.
+6. Send the email.
+7. Record the send event in `reports/release_decision_log.md`.
+8. Wait for the instructor reply before changing scores or releasing feedback.
 
 ## Default Files To Attach
 
@@ -79,7 +78,7 @@ Notes: Waiting for instructor policy confirmation before student-facing release 
 Do not generate final student-facing feedback, import the workbook, or mark the
 release gate ready until:
 
-- instructor recipient and send event are recorded;
+- send event is recorded;
 - all instructor policy decisions are resolved;
 - late policy is either applied or explicitly marked not applicable;
 - `python3 scripts/check_release_gate.py --write` reports no blockers.
