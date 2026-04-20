@@ -86,6 +86,8 @@ Only adjust these if the instructor changes policy. Otherwise leave the current 
 
 ## Files To Review Before Release
 
+- `reports/instructor_email_draft.md`
+- `reports/release_packet_manifest.md`
 - `reports/instructor_policy_confirmation_packet.md`
 - `reports/release_decision_log.md`
 - `reports/hw5_instructor_report.md`
@@ -97,9 +99,11 @@ Only adjust these if the instructor changes policy. Otherwise leave the current 
 
 ## Recommended Next Action
 
-Send `reports/instructor_policy_confirmation_packet.md` to the instructor, with
-the two instructor reports available as supporting attachments. Record the reply
-in `reports/release_decision_log.md`. If the instructor accepts the current
-policy, freeze the score CSVs and generate student-facing feedback. If the
-instructor changes policy, adjust only the targeted rows listed above and record
-the change in a new commit.
+Use `reports/instructor_email_draft.md` as the outgoing message and
+`reports/release_packet_manifest.md` as the attachment checklist. Send
+`reports/instructor_policy_confirmation_packet.md` to the instructor, with the
+two instructor reports available as supporting attachments. Record the reply in
+`reports/release_decision_log.md`. If the instructor accepts the current policy,
+freeze the score CSVs and generate student-facing feedback. If the instructor
+changes policy, adjust only the targeted rows listed above and record the change
+in a new commit.
