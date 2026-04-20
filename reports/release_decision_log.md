@@ -66,6 +66,10 @@ Pre-send verification:
   <ytwu@nycu.edu.tw>`, and the inspected E3 course announcement confirms the
   course lecturer context as `吳育德`. Recipient is now confirmed; sending is
   still blocked until the email is actually sent and logged.
+- 2026-04-20: Gmail connector draft creation was attempted after recipient
+  confirmation. The connector returned `ACCESS_TOKEN_SCOPE_INSUFFICIENT`, so no
+  draft was created and no email was sent. Manual send through Gmail web UI or
+  another authorized mail client is required.
 
 ```text
 Date sent:

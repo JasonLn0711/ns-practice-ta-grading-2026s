@@ -65,6 +65,9 @@ through a secure channel:
   the instructor directly. Gmail search found prior messages from `吳 (Wu)育德
   (Yu-Te) <ytwu@nycu.edu.tw>`, and the inspected E3 course announcement confirms
   the course lecturer context as `吳育德`.
+- [x] Attempt Gmail connector draft creation. Result: blocked by
+  `ACCESS_TOKEN_SCOPE_INSUFFICIENT`; no draft was created and no email was sent.
+  Use Gmail web UI or another authorized mail client for the send step.
 - [ ] Open `reports/instructor_confirmation_outbox.md`.
 - [ ] If needed, compare it against `reports/instructor_email_draft.md`.
 - [x] Confirm the recipient and course name.
