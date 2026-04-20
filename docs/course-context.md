@@ -60,7 +60,8 @@ E3 submission-page PDFs and ZIP exports belong in `submissions/<hw>/raw/`.
 
 The flattened renamed working files belong in `submissions/<hw>/renamed/`.
 
-For actual student submissions, keep these maps private and ignored by Git:
+For actual student submissions, keep these maps versioned inside the standalone
+private grading repo:
 
 - `submissions/<hw>/rename_map.csv`
 - `submissions/<hw>/student_file_map.csv`
@@ -73,8 +74,8 @@ HW6 assignment/reference material is stored under `course_materials/hw6/`;
 student-submission exports are stored separately under `submissions/hw6/`.
 
 As of 2026-04-20, HW5/HW6 E3 ZIP/PDF exports have been imported locally.
-The identity-bearing submission maps and renamed/extracted student files are
-private workspace files and are ignored by Git.
+The identity-bearing submission maps are versioned for auditability. Raw,
+renamed, and extracted student files remain ignored by Git.
 
 ## HW5 Assignment Facts Visible From Current Files
 
@@ -136,5 +137,8 @@ hw6_<studentID>_<sequence>_<originalShortName>.<ext>
 ## Privacy Boundary
 
 - Do not copy student names, IDs, grades, or review notes into random planning notes.
-- Keep raw files, extracted archives, feedback, review notes, and score sheets local/private by default.
+- Keep raw files, renamed files, extracted archives, and bulky course binaries
+  out of Git.
+- Version score sheets, student maps, deduction logs, reports, and grading notes
+  inside this standalone private grading repo.
 - If a policy decision matters later, summarize the decision without exposing unnecessary student details.
