@@ -1,0 +1,127 @@
+student_id,student_name,hw_id,submission_files,check,status,note
+111550109,黃琮仁,hw6,hw6_111550109_01_cdv-photo-1774854690-20260330151130.jpg;hw6_111550109_02_hw6-4layer.ipynb,code_present,ok,Expect notebook or Python code.
+111550109,黃琮仁,hw6,hw6_111550109_01_cdv-photo-1774854690-20260330151130.jpg;hw6_111550109_02_hw6-4layer.ipynb,graph_present,missing,Computational graph evidence.
+111550109,黃琮仁,hw6,hw6_111550109_01_cdv-photo-1774854690-20260330151130.jpg;hw6_111550109_02_hw6-4layer.ipynb,momentum_present,ok,Momentum evidence.
+111550109,黃琮仁,hw6,hw6_111550109_01_cdv-photo-1774854690-20260330151130.jpg;hw6_111550109_02_hw6-4layer.ipynb,filter_plot_present,ok,Learned filter plot evidence.
+111550109,黃琮仁,hw6,hw6_111550109_01_cdv-photo-1774854690-20260330151130.jpg;hw6_111550109_02_hw6-4layer.ipynb,feature_map_present,missing,Feature-map evidence.
+111550109,黃琮仁,hw6,hw6_111550109_01_cdv-photo-1774854690-20260330151130.jpg;hw6_111550109_02_hw6-4layer.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+112654017,蕭景升,hw6,hw6_112654017_01_draw-computational-graph.pdf;hw6_112654017_02_02-cnn-mnist-112654017-hw6.ipynb,code_present,ok,Expect notebook or Python code.
+112654017,蕭景升,hw6,hw6_112654017_01_draw-computational-graph.pdf;hw6_112654017_02_02-cnn-mnist-112654017-hw6.ipynb,graph_present,ok,Computational graph evidence.
+112654017,蕭景升,hw6,hw6_112654017_01_draw-computational-graph.pdf;hw6_112654017_02_02-cnn-mnist-112654017-hw6.ipynb,momentum_present,missing,Momentum evidence.
+112654017,蕭景升,hw6,hw6_112654017_01_draw-computational-graph.pdf;hw6_112654017_02_02-cnn-mnist-112654017-hw6.ipynb,filter_plot_present,ok,Learned filter plot evidence.
+112654017,蕭景升,hw6,hw6_112654017_01_draw-computational-graph.pdf;hw6_112654017_02_02-cnn-mnist-112654017-hw6.ipynb,feature_map_present,ok,Feature-map evidence.
+112654017,蕭景升,hw6,hw6_112654017_01_draw-computational-graph.pdf;hw6_112654017_02_02-cnn-mnist-112654017-hw6.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+113304030,鄭丞言,hw6,hw6_113304030_01_hw6.ipynb,code_present,ok,Expect notebook or Python code.
+113304030,鄭丞言,hw6,hw6_113304030_01_hw6.ipynb,graph_present,missing,Computational graph evidence.
+113304030,鄭丞言,hw6,hw6_113304030_01_hw6.ipynb,momentum_present,ok,Momentum evidence.
+113304030,鄭丞言,hw6,hw6_113304030_01_hw6.ipynb,filter_plot_present,missing,Learned filter plot evidence.
+113304030,鄭丞言,hw6,hw6_113304030_01_hw6.ipynb,feature_map_present,ok,Feature-map evidence.
+113304030,鄭丞言,hw6,hw6_113304030_01_hw6.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+113350014,凃宏諭,hw6,hw6_113350014_01_113350014-hw6.pdf;hw6_113350014_02_113350014-hw6.ipynb,code_present,ok,Expect notebook or Python code.
+113350014,凃宏諭,hw6,hw6_113350014_01_113350014-hw6.pdf;hw6_113350014_02_113350014-hw6.ipynb,graph_present,missing,Computational graph evidence.
+113350014,凃宏諭,hw6,hw6_113350014_01_113350014-hw6.pdf;hw6_113350014_02_113350014-hw6.ipynb,momentum_present,ok,Momentum evidence.
+113350014,凃宏諭,hw6,hw6_113350014_01_113350014-hw6.pdf;hw6_113350014_02_113350014-hw6.ipynb,filter_plot_present,ok,Learned filter plot evidence.
+113350014,凃宏諭,hw6,hw6_113350014_01_113350014-hw6.pdf;hw6_113350014_02_113350014-hw6.ipynb,feature_map_present,ok,Feature-map evidence.
+113350014,凃宏諭,hw6,hw6_113350014_01_113350014-hw6.pdf;hw6_113350014_02_113350014-hw6.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+214952033,陳奕樺,hw6,hw6_214952033_01_hw6.ipynb,code_present,ok,Expect notebook or Python code.
+214952033,陳奕樺,hw6,hw6_214952033_01_hw6.ipynb,graph_present,missing,Computational graph evidence.
+214952033,陳奕樺,hw6,hw6_214952033_01_hw6.ipynb,momentum_present,missing,Momentum evidence.
+214952033,陳奕樺,hw6,hw6_214952033_01_hw6.ipynb,filter_plot_present,ok,Learned filter plot evidence.
+214952033,陳奕樺,hw6,hw6_214952033_01_hw6.ipynb,feature_map_present,missing,Feature-map evidence.
+214952033,陳奕樺,hw6,hw6_214952033_01_hw6.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+314261001,沈恩佑,hw6,hw6_314261001_01_hw6.ipynb;hw6_314261001_02_computational-graph-of-cnn.pdf,code_present,ok,Expect notebook or Python code.
+314261001,沈恩佑,hw6,hw6_314261001_01_hw6.ipynb;hw6_314261001_02_computational-graph-of-cnn.pdf,graph_present,ok,Computational graph evidence.
+314261001,沈恩佑,hw6,hw6_314261001_01_hw6.ipynb;hw6_314261001_02_computational-graph-of-cnn.pdf,momentum_present,ok,Momentum evidence.
+314261001,沈恩佑,hw6,hw6_314261001_01_hw6.ipynb;hw6_314261001_02_computational-graph-of-cnn.pdf,filter_plot_present,ok,Learned filter plot evidence.
+314261001,沈恩佑,hw6,hw6_314261001_01_hw6.ipynb;hw6_314261001_02_computational-graph-of-cnn.pdf,feature_map_present,ok,Feature-map evidence.
+314261001,沈恩佑,hw6,hw6_314261001_01_hw6.ipynb;hw6_314261001_02_computational-graph-of-cnn.pdf,accuracy_present,ok,MNIST accuracy evidence near target.
+314261002,洪至寬,hw6,hw6_314261002_01_hw6.ipynb,code_present,ok,Expect notebook or Python code.
+314261002,洪至寬,hw6,hw6_314261002_01_hw6.ipynb,graph_present,missing,Computational graph evidence.
+314261002,洪至寬,hw6,hw6_314261002_01_hw6.ipynb,momentum_present,missing,Momentum evidence.
+314261002,洪至寬,hw6,hw6_314261002_01_hw6.ipynb,filter_plot_present,ok,Learned filter plot evidence.
+314261002,洪至寬,hw6,hw6_314261002_01_hw6.ipynb,feature_map_present,ok,Feature-map evidence.
+314261002,洪至寬,hw6,hw6_314261002_01_hw6.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+314261024,李昀昇,hw6,hw6_314261024_01_homework-6.ipynb,code_present,ok,Expect notebook or Python code.
+314261024,李昀昇,hw6,hw6_314261024_01_homework-6.ipynb,graph_present,ok,Computational graph evidence.
+314261024,李昀昇,hw6,hw6_314261024_01_homework-6.ipynb,momentum_present,ok,Momentum evidence.
+314261024,李昀昇,hw6,hw6_314261024_01_homework-6.ipynb,filter_plot_present,ok,Learned filter plot evidence.
+314261024,李昀昇,hw6,hw6_314261024_01_homework-6.ipynb,feature_map_present,ok,Feature-map evidence.
+314261024,李昀昇,hw6,hw6_314261024_01_homework-6.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+314264001,陳耘加,hw6,hw6_314264001_01_hw6-314264001.ipynb,code_present,ok,Expect notebook or Python code.
+314264001,陳耘加,hw6,hw6_314264001_01_hw6-314264001.ipynb,graph_present,missing,Computational graph evidence.
+314264001,陳耘加,hw6,hw6_314264001_01_hw6-314264001.ipynb,momentum_present,ok,Momentum evidence.
+314264001,陳耘加,hw6,hw6_314264001_01_hw6-314264001.ipynb,filter_plot_present,ok,Learned filter plot evidence.
+314264001,陳耘加,hw6,hw6_314264001_01_hw6-314264001.ipynb,feature_map_present,ok,Feature-map evidence.
+314264001,陳耘加,hw6,hw6_314264001_01_hw6-314264001.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+314264009,張庭榮,hw6,hw6_314264009_01_homework6.ipynb,code_present,ok,Expect notebook or Python code.
+314264009,張庭榮,hw6,hw6_314264009_01_homework6.ipynb,graph_present,missing,Computational graph evidence.
+314264009,張庭榮,hw6,hw6_314264009_01_homework6.ipynb,momentum_present,ok,Momentum evidence.
+314264009,張庭榮,hw6,hw6_314264009_01_homework6.ipynb,filter_plot_present,ok,Learned filter plot evidence.
+314264009,張庭榮,hw6,hw6_314264009_01_homework6.ipynb,feature_map_present,ok,Feature-map evidence.
+314264009,張庭榮,hw6,hw6_314264009_01_homework6.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+314264011,許浩哲,hw6,hw6_314264011_01_314264011-hw-6.ipynb;hw6_314264011_02_314264011-hw-6.pdf,code_present,ok,Expect notebook or Python code.
+314264011,許浩哲,hw6,hw6_314264011_01_314264011-hw-6.ipynb;hw6_314264011_02_314264011-hw-6.pdf,graph_present,missing,Computational graph evidence.
+314264011,許浩哲,hw6,hw6_314264011_01_314264011-hw-6.ipynb;hw6_314264011_02_314264011-hw-6.pdf,momentum_present,ok,Momentum evidence.
+314264011,許浩哲,hw6,hw6_314264011_01_314264011-hw-6.ipynb;hw6_314264011_02_314264011-hw-6.pdf,filter_plot_present,ok,Learned filter plot evidence.
+314264011,許浩哲,hw6,hw6_314264011_01_314264011-hw-6.ipynb;hw6_314264011_02_314264011-hw-6.pdf,feature_map_present,ok,Feature-map evidence.
+314264011,許浩哲,hw6,hw6_314264011_01_314264011-hw-6.ipynb;hw6_314264011_02_314264011-hw-6.pdf,accuracy_present,ok,MNIST accuracy evidence near target.
+314264012,游晟彬,hw6,hw6_314264012_01_hw6.ipynb,code_present,ok,Expect notebook or Python code.
+314264012,游晟彬,hw6,hw6_314264012_01_hw6.ipynb,graph_present,ok,Computational graph evidence.
+314264012,游晟彬,hw6,hw6_314264012_01_hw6.ipynb,momentum_present,ok,Momentum evidence.
+314264012,游晟彬,hw6,hw6_314264012_01_hw6.ipynb,filter_plot_present,ok,Learned filter plot evidence.
+314264012,游晟彬,hw6,hw6_314264012_01_hw6.ipynb,feature_map_present,ok,Feature-map evidence.
+314264012,游晟彬,hw6,hw6_314264012_01_hw6.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+314264013,張達瑋,hw6,hw6_314264013_01_homework6-computational-graph.pdf;hw6_314264013_02_homework6.ipynb,code_present,ok,Expect notebook or Python code.
+314264013,張達瑋,hw6,hw6_314264013_01_homework6-computational-graph.pdf;hw6_314264013_02_homework6.ipynb,graph_present,ok,Computational graph evidence.
+314264013,張達瑋,hw6,hw6_314264013_01_homework6-computational-graph.pdf;hw6_314264013_02_homework6.ipynb,momentum_present,ok,Momentum evidence.
+314264013,張達瑋,hw6,hw6_314264013_01_homework6-computational-graph.pdf;hw6_314264013_02_homework6.ipynb,filter_plot_present,ok,Learned filter plot evidence.
+314264013,張達瑋,hw6,hw6_314264013_01_homework6-computational-graph.pdf;hw6_314264013_02_homework6.ipynb,feature_map_present,ok,Feature-map evidence.
+314264013,張達瑋,hw6,hw6_314264013_01_homework6-computational-graph.pdf;hw6_314264013_02_homework6.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+314264019,游乙倢,hw6,hw6_314264019_01_hw6.ipynb,code_present,ok,Expect notebook or Python code.
+314264019,游乙倢,hw6,hw6_314264019_01_hw6.ipynb,graph_present,missing,Computational graph evidence.
+314264019,游乙倢,hw6,hw6_314264019_01_hw6.ipynb,momentum_present,ok,Momentum evidence.
+314264019,游乙倢,hw6,hw6_314264019_01_hw6.ipynb,filter_plot_present,ok,Learned filter plot evidence.
+314264019,游乙倢,hw6,hw6_314264019_01_hw6.ipynb,feature_map_present,ok,Feature-map evidence.
+314264019,游乙倢,hw6,hw6_314264019_01_hw6.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+314264023,蔡宜勳,hw6,hw6_314264023_01_hw06.ipynb,code_present,ok,Expect notebook or Python code.
+314264023,蔡宜勳,hw6,hw6_314264023_01_hw06.ipynb,graph_present,missing,Computational graph evidence.
+314264023,蔡宜勳,hw6,hw6_314264023_01_hw06.ipynb,momentum_present,ok,Momentum evidence.
+314264023,蔡宜勳,hw6,hw6_314264023_01_hw06.ipynb,filter_plot_present,ok,Learned filter plot evidence.
+314264023,蔡宜勳,hw6,hw6_314264023_01_hw06.ipynb,feature_map_present,ok,Feature-map evidence.
+314264023,蔡宜勳,hw6,hw6_314264023_01_hw06.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+314264024,王靖崴,hw6,hw6_314264024_01_hw6.ipynb,code_present,ok,Expect notebook or Python code.
+314264024,王靖崴,hw6,hw6_314264024_01_hw6.ipynb,graph_present,ok,Computational graph evidence.
+314264024,王靖崴,hw6,hw6_314264024_01_hw6.ipynb,momentum_present,ok,Momentum evidence.
+314264024,王靖崴,hw6,hw6_314264024_01_hw6.ipynb,filter_plot_present,ok,Learned filter plot evidence.
+314264024,王靖崴,hw6,hw6_314264024_01_hw6.ipynb,feature_map_present,ok,Feature-map evidence.
+314264024,王靖崴,hw6,hw6_314264024_01_hw6.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+314264029,方禹棠,hw6,hw6_314264029_01_hw6.ipynb,code_present,ok,Expect notebook or Python code.
+314264029,方禹棠,hw6,hw6_314264029_01_hw6.ipynb,graph_present,ok,Computational graph evidence.
+314264029,方禹棠,hw6,hw6_314264029_01_hw6.ipynb,momentum_present,ok,Momentum evidence.
+314264029,方禹棠,hw6,hw6_314264029_01_hw6.ipynb,filter_plot_present,ok,Learned filter plot evidence.
+314264029,方禹棠,hw6,hw6_314264029_01_hw6.ipynb,feature_map_present,ok,Feature-map evidence.
+314264029,方禹棠,hw6,hw6_314264029_01_hw6.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+314351005,邱欣儀,hw6,hw6_314351005_01_hw6.ipynb;hw6_314351005_02_hw6-314351005.pdf,code_present,ok,Expect notebook or Python code.
+314351005,邱欣儀,hw6,hw6_314351005_01_hw6.ipynb;hw6_314351005_02_hw6-314351005.pdf,graph_present,missing,Computational graph evidence.
+314351005,邱欣儀,hw6,hw6_314351005_01_hw6.ipynb;hw6_314351005_02_hw6-314351005.pdf,momentum_present,ok,Momentum evidence.
+314351005,邱欣儀,hw6,hw6_314351005_01_hw6.ipynb;hw6_314351005_02_hw6-314351005.pdf,filter_plot_present,ok,Learned filter plot evidence.
+314351005,邱欣儀,hw6,hw6_314351005_01_hw6.ipynb;hw6_314351005_02_hw6-314351005.pdf,feature_map_present,ok,Feature-map evidence.
+314351005,邱欣儀,hw6,hw6_314351005_01_hw6.ipynb;hw6_314351005_02_hw6-314351005.pdf,accuracy_present,ok,MNIST accuracy evidence near target.
+314351006,陳叡儀,hw6,hw6_314351006_01_hw6.jpg;hw6_314351006_02_hw6.ipynb,code_present,ok,Expect notebook or Python code.
+314351006,陳叡儀,hw6,hw6_314351006_01_hw6.jpg;hw6_314351006_02_hw6.ipynb,graph_present,missing,Computational graph evidence.
+314351006,陳叡儀,hw6,hw6_314351006_01_hw6.jpg;hw6_314351006_02_hw6.ipynb,momentum_present,ok,Momentum evidence.
+314351006,陳叡儀,hw6,hw6_314351006_01_hw6.jpg;hw6_314351006_02_hw6.ipynb,filter_plot_present,ok,Learned filter plot evidence.
+314351006,陳叡儀,hw6,hw6_314351006_01_hw6.jpg;hw6_314351006_02_hw6.ipynb,feature_map_present,ok,Feature-map evidence.
+314351006,陳叡儀,hw6,hw6_314351006_01_hw6.jpg;hw6_314351006_02_hw6.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+514660010,林煜樺,hw6,hw6_514660010_01_homework-6.ipynb,code_present,ok,Expect notebook or Python code.
+514660010,林煜樺,hw6,hw6_514660010_01_homework-6.ipynb,graph_present,missing,Computational graph evidence.
+514660010,林煜樺,hw6,hw6_514660010_01_homework-6.ipynb,momentum_present,missing,Momentum evidence.
+514660010,林煜樺,hw6,hw6_514660010_01_homework-6.ipynb,filter_plot_present,missing,Learned filter plot evidence.
+514660010,林煜樺,hw6,hw6_514660010_01_homework-6.ipynb,feature_map_present,missing,Feature-map evidence.
+514660010,林煜樺,hw6,hw6_514660010_01_homework-6.ipynb,accuracy_present,missing,MNIST accuracy evidence near target.
+514661019,蔡宇量,hw6,hw6_514661019_01_homework-6-514661019.ipynb,code_present,ok,Expect notebook or Python code.
+514661019,蔡宇量,hw6,hw6_514661019_01_homework-6-514661019.ipynb,graph_present,ok,Computational graph evidence.
+514661019,蔡宇量,hw6,hw6_514661019_01_homework-6-514661019.ipynb,momentum_present,ok,Momentum evidence.
+514661019,蔡宇量,hw6,hw6_514661019_01_homework-6-514661019.ipynb,filter_plot_present,ok,Learned filter plot evidence.
+514661019,蔡宇量,hw6,hw6_514661019_01_homework-6-514661019.ipynb,feature_map_present,ok,Feature-map evidence.
+514661019,蔡宇量,hw6,hw6_514661019_01_homework-6-514661019.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
