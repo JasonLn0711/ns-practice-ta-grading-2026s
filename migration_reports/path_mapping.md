@@ -1,0 +1,129 @@
+# Path Mapping
+
+Machine-readable source of truth: `path_mapping.csv`.
+
+| relative_path | category | sensitivity | action | linked |
+| --- | --- | --- | --- | --- |
+| .gitignore | repo_metadata_or_index | public_safe_within_private_repo | copy_directly | root_reference_only |
+| README.md | repo_metadata_or_index | public_safe_within_private_repo | copy_to_new_repo_leave_compatibility_stub_if_referenced | root_reference_only |
+| README_migration.md | migration_artifact | public_safe_within_private_repo | copy_directly | root_reference_only |
+| course_materials/hw5/README.md | course_material_metadata | course_material_private_or_license_bound | copy_directly | root_reference_only |
+| course_materials/hw5/mnist-verification.md | course_material_metadata | course_material_private_or_license_bound | copy_directly | yes |
+| course_materials/hw5/raw/.gitkeep | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/raw/01_perceptron_classifier.ipynb | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/raw/02_neural_network_classifier.ipynb | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/raw/03_batching.ipynb | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/raw/04_testing.ipynb | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/raw/05_Training of Multi-Layer Neural Network.pdf | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/raw/05_development.ipynb | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/raw/06_drop_out.ipynb | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/raw/Homework 4 .pdf | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/raw/Homework 5 .pdf | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/raw/circles.txt | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/raw/linearly_separable.txt | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/raw/mnist/readme.txt | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/raw/mnist/t10k-images-idx3-ubyte.gz | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/raw/mnist/t10k-labels-idx1-ubyte.gz | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/raw/mnist/train-images-idx3-ubyte.gz | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/raw/mnist/train-labels-idx1-ubyte.gz | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/raw/non_linearly_separable.txt | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/rename_map.csv | course_material_metadata | course_material_private_or_license_bound | copy_directly | yes |
+| course_materials/hw5/renamed/.gitkeep | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/renamed/hw5_course_homework04-context-spec.pdf | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/renamed/hw5_course_homework05-assignment-spec.pdf | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/renamed/hw5_course_lecture05-training-multi-layer-neural-network.pdf | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/renamed/hw5_reference_01-perceptron-classifier.ipynb | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/renamed/hw5_reference_02-neural-network-classifier.ipynb | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/renamed/hw5_reference_03-batching.ipynb | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/renamed/hw5_reference_04-testing-hw4-base.ipynb | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/renamed/hw5_reference_05-development-configuration.ipynb | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/renamed/hw5_reference_06-drop-out.ipynb | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/renamed/hw5_reference_circles-data.txt | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/renamed/hw5_reference_linearly-separable-data.txt | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/renamed/hw5_reference_non-linearly-separable-data.txt | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/renamed/mnist/hw5_reference_mnist_readme.txt | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/renamed/mnist/hw5_reference_mnist_test-images-idx3-ubyte.gz | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/renamed/mnist/hw5_reference_mnist_test-labels-idx1-ubyte.gz | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/renamed/mnist/hw5_reference_mnist_train-images-idx3-ubyte.gz | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw5/renamed/mnist/hw5_reference_mnist_train-labels-idx1-ubyte.gz | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw6/README.md | course_material_metadata | course_material_private_or_license_bound | copy_directly | root_reference_only |
+| course_materials/hw6/raw/.gitkeep | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw6/raw/01_CNN_MNIST_batch.ipynb | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw6/raw/02_CNN_MNIST_momentum.ipynb | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw6/raw/06_Convolutional Neural Network_final.pdf | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw6/raw/Homework 6 .pdf | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw6/rename_map.csv | course_material_metadata | course_material_private_or_license_bound | copy_directly | yes |
+| course_materials/hw6/renamed/.gitkeep | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw6/renamed/hw6_course_homework06-assignment-spec.pdf | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw6/renamed/hw6_course_lecture06-convolutional-neural-network.pdf | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw6/renamed/hw6_reference_01-cnn-mnist-batch.ipynb | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| course_materials/hw6/renamed/hw6_reference_02-cnn-mnist-momentum.ipynb | raw_or_bulky_private_data | sensitive_unversioned | copy_first_verify_later_keep_ignored | root_reference_only |
+| docs/academic-integrity-notes.md | policy_or_rubric_doc | public_safe_within_private_repo | copy_to_new_repo_leave_compatibility_stub_if_referenced | root_reference_only |
+| docs/course-context.md | policy_or_rubric_doc | public_safe_within_private_repo | copy_to_new_repo_leave_compatibility_stub_if_referenced | root_reference_only |
+| docs/evidence_levels.md | policy_or_rubric_doc | public_safe_within_private_repo | copy_to_new_repo_leave_compatibility_stub_if_referenced | root_reference_only |
+| docs/grading_policy.md | policy_or_rubric_doc | public_safe_within_private_repo | copy_to_new_repo_leave_compatibility_stub_if_referenced | root_reference_only |
+| docs/hw5_assignment_requirements.md | policy_or_rubric_doc | public_safe_within_private_repo | copy_to_new_repo_leave_compatibility_stub_if_referenced | root_reference_only |
+| docs/hw5_deduction_dictionary.md | policy_or_rubric_doc | public_safe_within_private_repo | copy_to_new_repo_leave_compatibility_stub_if_referenced | root_reference_only |
+| docs/hw5_rubric.md | policy_or_rubric_doc | public_safe_within_private_repo | copy_to_new_repo_leave_compatibility_stub_if_referenced | root_reference_only |
+| docs/hw6_assignment_requirements.md | policy_or_rubric_doc | public_safe_within_private_repo | copy_to_new_repo_leave_compatibility_stub_if_referenced | root_reference_only |
+| docs/hw6_deduction_dictionary.md | policy_or_rubric_doc | public_safe_within_private_repo | copy_to_new_repo_leave_compatibility_stub_if_referenced | root_reference_only |
+| docs/hw6_rubric.md | policy_or_rubric_doc | public_safe_within_private_repo | copy_to_new_repo_leave_compatibility_stub_if_referenced | root_reference_only |
+| docs/late-policy.md | policy_or_rubric_doc | public_safe_within_private_repo | copy_to_new_repo_leave_compatibility_stub_if_referenced | root_reference_only |
+| docs/remote_setup.md | policy_or_rubric_doc | public_safe_within_private_repo | copy_to_new_repo_leave_compatibility_stub_if_referenced | root_reference_only |
+| docs/versioning_policy.md | policy_or_rubric_doc | public_safe_within_private_repo | copy_to_new_repo_leave_compatibility_stub_if_referenced | root_reference_only |
+| grading/hw5/deduction_log.csv | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw5/evidence.csv | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw5/feedback/.gitkeep | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw5/review_notes/.gitkeep | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw5/scores.csv | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw5/student_notes/111550109.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw5/student_notes/112654017.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw5/student_notes/113304030.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw5/student_notes/113350014.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw5/student_notes/214952033.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw5/student_notes/314261001.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw5/student_notes/314261002.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw5/student_notes/314261024.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw5/student_notes/314264001.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw5/student_notes/314264009.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw5/student_notes/314264011.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw5/student_notes/314264012.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw5/student_notes/314264013.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw5/student_notes/314264019.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw5/student_notes/314264023.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw5/student_notes/314264024.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw5/student_notes/314264029.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw5/student_notes/314351005.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw5/student_notes/314351006.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw5/student_notes/514660010.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw5/student_notes/514661019.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw6/deduction_log.csv | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw6/evidence.csv | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw6/feedback/.gitkeep | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw6/review_notes/.gitkeep | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw6/scores.csv | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw6/student_notes/111550109.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw6/student_notes/112654017.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw6/student_notes/113304030.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw6/student_notes/113350014.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw6/student_notes/214952033.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw6/student_notes/314261001.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw6/student_notes/314261002.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw6/student_notes/314261024.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw6/student_notes/314264001.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw6/student_notes/314264009.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw6/student_notes/314264011.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw6/student_notes/314264012.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw6/student_notes/314264013.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw6/student_notes/314264019.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw6/student_notes/314264023.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw6/student_notes/314264024.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw6/student_notes/314264029.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw6/student_notes/314351005.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw6/student_notes/314351006.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw6/student_notes/514660010.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| grading/hw6/student_notes/514661019.md | private_audit_metadata | sensitive_versioned_private_repo | copy_and_version_in_private_repo | root_reference_only |
+| migration_reports/01_inventory.md | migration_artifact | public_safe_within_private_repo | copy_directly | root_reference_only |
+
+
+Only first 120 of 276 rows shown; see CSV for full mapping.
