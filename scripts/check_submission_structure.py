@@ -22,6 +22,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Check submission structure.")
     parser.add_argument("--homework", choices=["hw5", "hw6"], required=True)
     parser.add_argument("--submission-dir", type=Path)
+    parser.add_argument("--student-map", type=Path)
     parser.add_argument("--output", type=Path)
     parser.add_argument("--write", action="store_true", help="Write CSV output.")
     return parser.parse_args()
@@ -29,6 +30,41 @@ def parse_args() -> argparse.Namespace:
 
 def all_files(root: Path) -> list[Path]:
     return sorted(path for path in root.rglob("*") if path.is_file())
+
+
+def student_name(student_id: str, label: str) -> str:
+    remainder = label.replace(student_id, "", 1).strip()
+    if not remainder:
+        return ""
+    return remainder.split()[0]
+
+
+def mapped_groups(homework: str, submission_dir: Path, map_path: Path) -> list[dict[str, object]]:
+    if not map_path.exists():
+        return []
+
+    groups: dict[str, dict[str, object]] = {}
+    with map_path.open(newline="", encoding="utf-8") as handle:
+        for row in csv.DictReader(handle):
+            if row.get("homework") != homework:
+                continue
+            student_id = row.get("student_id", "").strip()
+            new_filename = row.get("new_filename", "").strip()
+            if not student_id or not new_filename:
+                continue
+            group = groups.setdefault(
+                student_id,
+                {
+                    "student_id": student_id,
+                    "student_name": student_name(student_id, row.get("student_label", "")),
+                    "files": [],
+                },
+            )
+            file_path = submission_dir / new_filename
+            if file_path.exists():
+                group["files"].append(file_path)
+
+    return [groups[key] for key in sorted(groups)]
 
 
 def text_for(path: Path) -> str:
@@ -83,30 +119,54 @@ def checks(homework: str, files: list[Path]) -> list[tuple[str, bool, str]]:
 def main() -> int:
     args = parse_args()
     submission_dir = args.submission_dir or ROOT / "submissions" / args.homework / "renamed"
+    map_path = args.student_map or ROOT / "submissions" / args.homework / "student_file_map.csv"
     output = args.output or ROOT / "grading" / args.homework / "structure_check.csv"
 
     if not submission_dir.exists():
         print(f"Submission directory does not exist: {submission_dir}")
         return 1
 
-    files = all_files(submission_dir)
+    groups = mapped_groups(args.homework, submission_dir, map_path)
+    if not groups:
+        groups = [{"student_id": "unknown", "student_name": "", "files": all_files(submission_dir)}]
+
     rows = []
-    for label, ok, note in checks(args.homework, files):
-        rows.append({"hw_id": args.homework, "check": label, "status": "ok" if ok else "missing", "note": note})
-        print(f"{'OK' if ok else 'MISSING'}: {label} - {note}")
+    missing = 0
+    for group in groups:
+        files = list(group["files"])
+        submission_files = ";".join(path.name for path in files)
+        for label, ok, note in checks(args.homework, files):
+            rows.append(
+                {
+                    "student_id": str(group["student_id"]),
+                    "student_name": str(group["student_name"]),
+                    "hw_id": args.homework,
+                    "submission_files": submission_files,
+                    "check": label,
+                    "status": "ok" if ok else "missing",
+                    "note": note,
+                }
+            )
+            if not ok:
+                missing += 1
+            print(f"{group['student_id']} {'OK' if ok else 'MISSING'}: {label} - {note}")
 
     if args.write:
         output.parent.mkdir(parents=True, exist_ok=True)
         with output.open("w", newline="", encoding="utf-8") as handle:
-            writer = csv.DictWriter(handle, ["hw_id", "check", "status", "note"])
+            writer = csv.DictWriter(
+                handle,
+                ["student_id", "student_name", "hw_id", "submission_files", "check", "status", "note"],
+                lineterminator="\n",
+            )
             writer.writeheader()
             writer.writerows(rows)
         print(f"Wrote: {output}")
     else:
         print("Dry-run only. Re-run with --write to write CSV output.")
 
-    missing = sum(1 for row in rows if row["status"] == "missing")
-    print(f"Summary: files={len(files)} checks={len(rows)} missing={missing}")
+    file_count = sum(len(group["files"]) for group in groups)
+    print(f"Summary: students={len(groups)} files={file_count} checks={len(rows)} missing={missing}")
     return 0
 
 
