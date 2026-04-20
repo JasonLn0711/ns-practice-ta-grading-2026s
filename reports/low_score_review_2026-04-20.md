@@ -1,45 +1,45 @@
-# Low-Score Review Report - 2026-04-20
+# 低分複核總報告：2026-04-20
 
-Reviewed at: `2026-04-20T22:17:58+08:00`
+複核時間：`2026-04-20T22:17:58+08:00`
 
-## Scope
+## 複核範圍
 
-- Reviewed every recorded score below 60 across `HW5`, `HW6(圖)`, and `HW6(code)`.
-- `HW5`: no score below 60 was found.
-- Original HW6 below-60 score records reviewed: 9.
-- Records still below 60 after review: 8.
-- Records adjusted above 60 after review: 1.
-- Linked non-low score correction: `514660010` `HW6(code)` changed from `77` to `100` because the same missed graph evidence invalidated the prior code graph-to-code deduction.
+- 本次複核所有低於 60 分的 `HW5`、`HW6（圖）`、`HW6（程式）` 成績紀錄。
+- `HW5` 沒有低於 60 分的成績。
+- 原本低於 60 分的 HW6 成績紀錄共有 9 筆。
+- 複核後仍低於 60 分的紀錄共有 8 筆。
+- 複核後調整為 60 分以上的紀錄共有 1 筆。
+- 連帶修正：`514660010 林煜樺` 的 `HW6（程式）` 由 `77` 調整為 `100`，因為原先程式端扣分同樣建立在「未找到計算圖」這個已被複核推翻的判斷上。
 
-## Review Decisions
+## 複核決定
 
-| Student ID | Name | Score | Original | Reviewed | Decision | Reason |
+| 學號 | 姓名 | 分數項目 | 原始分數 | 複核後分數 | 決定 | 複核理由 |
 | --- | --- | --- | ---: | ---: | --- | --- |
-| `113304030` | 鄭丞言 | `HW6(圖)` | 26 | 26 | `keep_below_60` | Only intermediate feature maps were found. No computational graph artifact and no learned-filter plot were auditable, so Figure-1 and Figure-2 remain zero under the official figure rubric. |
-| `214952033` | 陳奕樺 | `HW6(code)` | 49 | 49 | `keep_below_60` | Notebook shows a CNN with only one hidden fully connected layer before output, no computational graph, and Adam rather than explicit mini-batch stochastic gradient with momentum. High accuracy does not override missing architecture, graph-to-code, or momentum evidence. |
-| `214952033` | 陳奕樺 | `HW6(圖)` | 53 | 53 | `keep_below_60` | Learned filters and feature maps are present, but no computational graph artifact is present; graph evidence is a required 40-point figure category. |
-| `314261002` | 洪至寬 | `HW6(圖)` | 53 | 53 | `keep_below_60` | Filters and feature maps are present. The notebook references image1.png as CNN structure, but the referenced image is not recoverable in the submission bundle, so graph credit is not auditable. |
-| `314264001` | 陳耘加 | `HW6(圖)` | 53 | 53 | `keep_below_60` | Filters and feature maps are present, but no computational graph artifact was found. Missing graph evidence keeps Figure-1 at zero and caps figure auditability. |
-| `314264019` | 游乙倢 | `HW6(圖)` | 53 | 53 | `keep_below_60` | Filters and feature maps are present, but no computational graph artifact was found. Missing graph evidence keeps Figure-1 at zero and caps figure auditability. |
-| `314264023` | 蔡宜勳 | `HW6(圖)` | 53 | 53 | `keep_below_60` | Filters and feature maps are present, but no computational graph artifact was found. Missing graph evidence keeps Figure-1 at zero and caps figure auditability. |
-| `314264029` | 方禹棠 | `HW6(圖)` | 52 | 52 | `keep_below_60` | The graph and visuals are traceable but describe a dense MLP, not the required CNN workflow. The visualized weights are not learned convolution filters, and dense activations are not CNN intermediate feature maps. |
-| `514660010` | 林煜樺 | `HW6(圖)` | 53 | 100 | `adjust_above_60` | Review found the embedded CNN computational graph in notebook markdown with source-code variable names, forward/backward relations, and momentum context. Filters, input digit, and feature maps were already present. |
+| `113304030` | 鄭丞言 | `HW6（圖）` | 26 | 26 | 複核後維持低於 60 分 | 複核後只找到中間特徵圖（intermediate feature maps）證據；沒有找到可稽核的計算圖（computational graph）與已學得濾波器（learned filters）圖。因此依正式圖像評分規準，圖像項目一與圖像項目二 仍維持零分。 |
+| `214952033` | 陳奕樺 | `HW6（程式）` | 49 | 49 | 複核後維持低於 60 分 | 複核後確認筆記本（notebook）中的模型只有一個隱藏全連接層接到輸出層，未完成題目要求的兩個新增隱藏層；同時沒有計算圖證據，訓練方法使用亞當最佳化器（Adam），而不是明確的小批次隨機梯度搭配動量（mini-batch stochastic gradient with momentum）。即使準確率達標，也不能抵銷架構、計算圖對應與動量訓練證據不足。 |
+| `214952033` | 陳奕樺 | `HW6（圖）` | 53 | 53 | 複核後維持低於 60 分 | 複核後確認已學得濾波器與中間特徵圖存在，但沒有計算圖成品。計算圖是 HW6（圖）的 40 分必要項目，因此圖像分數維持低於 60 分。 |
+| `314261002` | 洪至寬 | `HW6（圖）` | 53 | 53 | 複核後維持低於 60 分 | 複核後確認已學得濾波器與中間特徵圖存在。筆記本中提到 `image1.png` 作為卷積神經網路結構圖，但該圖檔在目前繳交資料中不可回查，因此不能視為可稽核的計算圖證據。 |
+| `314264001` | 陳耘加 | `HW6（圖）` | 53 | 53 | 複核後維持低於 60 分 | 複核後確認已學得濾波器與中間特徵圖存在，但沒有找到計算圖成品。缺少計算圖證據時，圖像項目一維持零分，且圖像可稽核性分數不能給滿。 |
+| `314264019` | 游乙倢 | `HW6（圖）` | 53 | 53 | 複核後維持低於 60 分 | 複核後確認已學得濾波器與中間特徵圖存在，但沒有找到計算圖成品。依正式規準，沒有可稽核計算圖時不能給圖像項目一分數。 |
+| `314264023` | 蔡宜勳 | `HW6（圖）` | 53 | 53 | 複核後維持低於 60 分 | 複核後確認已學得濾波器與中間特徵圖存在，但沒有找到計算圖成品。因計算圖是圖像分數的核心必要項目，所以複核後仍維持低於 60 分。 |
+| `314264029` | 方禹棠 | `HW6（圖）` | 52 | 52 | 複核後維持低於 60 分 | 複核後確認其圖與視覺化輸出可以回查，但內容描述的是密集多層感知器（dense multilayer perceptron），不是題目要求的卷積神經網路（convolutional neural network）流程。視覺化的權重不是卷積濾波器，中間反應也不是卷積神經網路的特徵圖，因此圖像分數維持低於 60 分。 |
+| `514660010` | 林煜樺 | `HW6（圖）` | 53 | 100 | 複核後調整為 60 分以上 | 複核後找到筆記本內嵌的卷積神經網路計算圖。該圖包含與原始程式變數對應的標記、正向與反向關係、動量更新脈絡，且原本已具備已學得濾波器、輸入數字與中間特徵圖。因此原本「缺少計算圖」的扣分不成立。 |
 
-## Adjustment Made
+## 已做成績調整
 
-- `514660010 林煜樺` `HW6(圖)`: `53 -> 100`.
-- Linked correction: `514660010 林煜樺` `HW6(code)`: `77 -> 100` because the prior `CODE_GRAPH_NOTATION_MISMATCH` deduction depended on the same missed graph evidence.
-- Superseded deduction rows for `514660010` were removed from canonical HW6 deduction logs so validation and reports match the corrected current score state.
-- Detailed before/after fields are stored in `grading/hw6/score_adjustment_log_2026-04-20.csv`.
+- `514660010 林煜樺` 的 `HW6（圖）`：`53 -> 100`。
+- 連帶修正 `514660010 林煜樺` 的 `HW6（程式）`：`77 -> 100`。原因是原本的「計算圖與程式標記不一致」扣分依賴同一個「未找到計算圖」判斷，而該判斷已被複核推翻。
+- `514660010` 在正式 HW6 扣分紀錄中被推翻的扣分列已移除，使目前的分數表、扣分表與稽核報告一致。
+- 詳細調整前後欄位紀錄在 `grading/hw6/score_adjustment_log_2026-04-20.csv`。
 
-## Files Written
+## 本次寫入文件
 
 - `grading/low_score_reviews_2026-04-20.csv`
 - `grading/low_score_reviews_2026-04-20/`
 - `grading/hw6/score_adjustment_log_2026-04-20.csv`
 
-## Policy Notes
+## 評分政策備註
 
-- A graph or figure mentioned by filename but not recoverable in the submitted bundle was treated as not auditable.
-- High accuracy did not override missing architecture, graph-to-code, or momentum evidence.
-- Dense-network visualizations were not treated as CNN learned filters or CNN feature maps.
+- 若學生在筆記本中提到某張圖檔，但繳交資料中無法開啟或回查該圖檔，該圖不視為可稽核證據。
+- 高準確率不能抵銷架構、計算圖與程式對應、動量訓練等必要證據不足。
+- 密集網路（dense network）的權重或中間反應，不等同於卷積神經網路的已學得濾波器或中間特徵圖。
