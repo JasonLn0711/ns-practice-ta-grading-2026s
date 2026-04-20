@@ -1,0 +1,85 @@
+student_id,student_name,hw_id,submission_files,check,status,note
+111550109,黃琮仁,hw5,hw5_111550109_01_hw5-acc98.ipynb,code_present,ok,Expect notebook or Python code.
+111550109,黃琮仁,hw5,hw5_111550109_01_hw5-acc98.ipynb,configuration_present,missing,Configuration workflow evidence.
+111550109,黃琮仁,hw5,hw5_111550109_01_hw5-acc98.ipynb,hyperparameters_present,missing,"Hidden nodes, learning rate, batch size, epoch."
+111550109,黃琮仁,hw5,hw5_111550109_01_hw5-acc98.ipynb,accuracy_present,missing,MNIST accuracy evidence near target.
+112654017,蕭景升,hw5,hw5_112654017_01_04-testing-hw5-112654017.ipynb,code_present,ok,Expect notebook or Python code.
+112654017,蕭景升,hw5,hw5_112654017_01_04-testing-hw5-112654017.ipynb,configuration_present,missing,Configuration workflow evidence.
+112654017,蕭景升,hw5,hw5_112654017_01_04-testing-hw5-112654017.ipynb,hyperparameters_present,missing,"Hidden nodes, learning rate, batch size, epoch."
+112654017,蕭景升,hw5,hw5_112654017_01_04-testing-hw5-112654017.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+113304030,鄭丞言,hw5,hw5_113304030_01_homework-5-redone.ipynb,code_present,ok,Expect notebook or Python code.
+113304030,鄭丞言,hw5,hw5_113304030_01_homework-5-redone.ipynb,configuration_present,ok,Configuration workflow evidence.
+113304030,鄭丞言,hw5,hw5_113304030_01_homework-5-redone.ipynb,hyperparameters_present,ok,"Hidden nodes, learning rate, batch size, epoch."
+113304030,鄭丞言,hw5,hw5_113304030_01_homework-5-redone.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+113350014,凃宏諭,hw5,hw5_113350014_01_113350014-hw5.ipynb,code_present,ok,Expect notebook or Python code.
+113350014,凃宏諭,hw5,hw5_113350014_01_113350014-hw5.ipynb,configuration_present,ok,Configuration workflow evidence.
+113350014,凃宏諭,hw5,hw5_113350014_01_113350014-hw5.ipynb,hyperparameters_present,missing,"Hidden nodes, learning rate, batch size, epoch."
+113350014,凃宏諭,hw5,hw5_113350014_01_113350014-hw5.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+214952033,陳奕樺,hw5,hw5_214952033_01_hw5.ipynb,code_present,ok,Expect notebook or Python code.
+214952033,陳奕樺,hw5,hw5_214952033_01_hw5.ipynb,configuration_present,missing,Configuration workflow evidence.
+214952033,陳奕樺,hw5,hw5_214952033_01_hw5.ipynb,hyperparameters_present,missing,"Hidden nodes, learning rate, batch size, epoch."
+214952033,陳奕樺,hw5,hw5_214952033_01_hw5.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+314261001,沈恩佑,hw5,hw5_314261001_01_hw5.ipynb,code_present,ok,Expect notebook or Python code.
+314261001,沈恩佑,hw5,hw5_314261001_01_hw5.ipynb,configuration_present,ok,Configuration workflow evidence.
+314261001,沈恩佑,hw5,hw5_314261001_01_hw5.ipynb,hyperparameters_present,ok,"Hidden nodes, learning rate, batch size, epoch."
+314261001,沈恩佑,hw5,hw5_314261001_01_hw5.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+314261002,洪至寬,hw5,hw5_314261002_01_hw5.ipynb,code_present,ok,Expect notebook or Python code.
+314261002,洪至寬,hw5,hw5_314261002_01_hw5.ipynb,configuration_present,missing,Configuration workflow evidence.
+314261002,洪至寬,hw5,hw5_314261002_01_hw5.ipynb,hyperparameters_present,missing,"Hidden nodes, learning rate, batch size, epoch."
+314261002,洪至寬,hw5,hw5_314261002_01_hw5.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+314261024,李昀昇,hw5,hw5_314261024_01_homework-5.ipynb,code_present,ok,Expect notebook or Python code.
+314261024,李昀昇,hw5,hw5_314261024_01_homework-5.ipynb,configuration_present,ok,Configuration workflow evidence.
+314261024,李昀昇,hw5,hw5_314261024_01_homework-5.ipynb,hyperparameters_present,ok,"Hidden nodes, learning rate, batch size, epoch."
+314261024,李昀昇,hw5,hw5_314261024_01_homework-5.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+314264001,陳耘加,hw5,hw5_314264001_01_hw5-314264001.ipynb,code_present,ok,Expect notebook or Python code.
+314264001,陳耘加,hw5,hw5_314264001_01_hw5-314264001.ipynb,configuration_present,ok,Configuration workflow evidence.
+314264001,陳耘加,hw5,hw5_314264001_01_hw5-314264001.ipynb,hyperparameters_present,ok,"Hidden nodes, learning rate, batch size, epoch."
+314264001,陳耘加,hw5,hw5_314264001_01_hw5-314264001.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+314264009,張庭榮,hw5,hw5_314264009_01_homework-5.ipynb,code_present,ok,Expect notebook or Python code.
+314264009,張庭榮,hw5,hw5_314264009_01_homework-5.ipynb,configuration_present,ok,Configuration workflow evidence.
+314264009,張庭榮,hw5,hw5_314264009_01_homework-5.ipynb,hyperparameters_present,missing,"Hidden nodes, learning rate, batch size, epoch."
+314264009,張庭榮,hw5,hw5_314264009_01_homework-5.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+314264011,許浩哲,hw5,hw5_314264011_01_314264011-hw-5.ipynb,code_present,ok,Expect notebook or Python code.
+314264011,許浩哲,hw5,hw5_314264011_01_314264011-hw-5.ipynb,configuration_present,ok,Configuration workflow evidence.
+314264011,許浩哲,hw5,hw5_314264011_01_314264011-hw-5.ipynb,hyperparameters_present,ok,"Hidden nodes, learning rate, batch size, epoch."
+314264011,許浩哲,hw5,hw5_314264011_01_314264011-hw-5.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+314264012,游晟彬,hw5,hw5_314264012_01_hw5.ipynb,code_present,ok,Expect notebook or Python code.
+314264012,游晟彬,hw5,hw5_314264012_01_hw5.ipynb,configuration_present,ok,Configuration workflow evidence.
+314264012,游晟彬,hw5,hw5_314264012_01_hw5.ipynb,hyperparameters_present,missing,"Hidden nodes, learning rate, batch size, epoch."
+314264012,游晟彬,hw5,hw5_314264012_01_hw5.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+314264013,張達瑋,hw5,hw5_314264013_01_homework5.ipynb,code_present,ok,Expect notebook or Python code.
+314264013,張達瑋,hw5,hw5_314264013_01_homework5.ipynb,configuration_present,ok,Configuration workflow evidence.
+314264013,張達瑋,hw5,hw5_314264013_01_homework5.ipynb,hyperparameters_present,missing,"Hidden nodes, learning rate, batch size, epoch."
+314264013,張達瑋,hw5,hw5_314264013_01_homework5.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+314264019,游乙倢,hw5,hw5_314264019_01_hw5.ipynb,code_present,ok,Expect notebook or Python code.
+314264019,游乙倢,hw5,hw5_314264019_01_hw5.ipynb,configuration_present,missing,Configuration workflow evidence.
+314264019,游乙倢,hw5,hw5_314264019_01_hw5.ipynb,hyperparameters_present,missing,"Hidden nodes, learning rate, batch size, epoch."
+314264019,游乙倢,hw5,hw5_314264019_01_hw5.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+314264023,蔡宜勳,hw5,hw5_314264023_01_hw05.ipynb,code_present,ok,Expect notebook or Python code.
+314264023,蔡宜勳,hw5,hw5_314264023_01_hw05.ipynb,configuration_present,ok,Configuration workflow evidence.
+314264023,蔡宜勳,hw5,hw5_314264023_01_hw05.ipynb,hyperparameters_present,missing,"Hidden nodes, learning rate, batch size, epoch."
+314264023,蔡宜勳,hw5,hw5_314264023_01_hw05.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+314264024,王靖崴,hw5,hw5_314264024_01_hw5.ipynb,code_present,ok,Expect notebook or Python code.
+314264024,王靖崴,hw5,hw5_314264024_01_hw5.ipynb,configuration_present,ok,Configuration workflow evidence.
+314264024,王靖崴,hw5,hw5_314264024_01_hw5.ipynb,hyperparameters_present,ok,"Hidden nodes, learning rate, batch size, epoch."
+314264024,王靖崴,hw5,hw5_314264024_01_hw5.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+314264029,方禹棠,hw5,hw5_314264029_01_hw5.ipynb,code_present,ok,Expect notebook or Python code.
+314264029,方禹棠,hw5,hw5_314264029_01_hw5.ipynb,configuration_present,ok,Configuration workflow evidence.
+314264029,方禹棠,hw5,hw5_314264029_01_hw5.ipynb,hyperparameters_present,missing,"Hidden nodes, learning rate, batch size, epoch."
+314264029,方禹棠,hw5,hw5_314264029_01_hw5.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+314351005,邱欣儀,hw5,hw5_314351005_01_hw5.ipynb,code_present,ok,Expect notebook or Python code.
+314351005,邱欣儀,hw5,hw5_314351005_01_hw5.ipynb,configuration_present,ok,Configuration workflow evidence.
+314351005,邱欣儀,hw5,hw5_314351005_01_hw5.ipynb,hyperparameters_present,missing,"Hidden nodes, learning rate, batch size, epoch."
+314351005,邱欣儀,hw5,hw5_314351005_01_hw5.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+314351006,陳叡儀,hw5,hw5_314351006_01_hw5.ipynb,code_present,ok,Expect notebook or Python code.
+314351006,陳叡儀,hw5,hw5_314351006_01_hw5.ipynb,configuration_present,ok,Configuration workflow evidence.
+314351006,陳叡儀,hw5,hw5_314351006_01_hw5.ipynb,hyperparameters_present,missing,"Hidden nodes, learning rate, batch size, epoch."
+314351006,陳叡儀,hw5,hw5_314351006_01_hw5.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
+514660010,林煜樺,hw5,hw5_514660010_01_homework-5.ipynb,code_present,ok,Expect notebook or Python code.
+514660010,林煜樺,hw5,hw5_514660010_01_homework-5.ipynb,configuration_present,missing,Configuration workflow evidence.
+514660010,林煜樺,hw5,hw5_514660010_01_homework-5.ipynb,hyperparameters_present,missing,"Hidden nodes, learning rate, batch size, epoch."
+514660010,林煜樺,hw5,hw5_514660010_01_homework-5.ipynb,accuracy_present,missing,MNIST accuracy evidence near target.
+514661019,蔡宇量,hw5,hw5_514661019_01_homework-5-514661019.ipynb,code_present,ok,Expect notebook or Python code.
+514661019,蔡宇量,hw5,hw5_514661019_01_homework-5-514661019.ipynb,configuration_present,ok,Configuration workflow evidence.
+514661019,蔡宇量,hw5,hw5_514661019_01_homework-5-514661019.ipynb,hyperparameters_present,ok,"Hidden nodes, learning rate, batch size, epoch."
+514661019,蔡宇量,hw5,hw5_514661019_01_homework-5-514661019.ipynb,accuracy_present,ok,MNIST accuracy evidence near target.
