@@ -1,22 +1,32 @@
 # HW6(figure) Audit Report
 
-Generated: `2026-04-20T20:43:35+08:00`
+Generated: `2026-04-20T21:07:23+08:00`
 
 ## Summary
 
+- Total submissions represented in score file: 21
 - Submissions graded: 21
 - Complete Level A evidence rows: 11
 - Manual review rows: 0
 - Average HW6(figure) score: 78.38
 
+## Evidence Levels
+
+| Evidence level | Count |
+| --- | ---: |
+| `A` | 11 |
+| `B` | 9 |
+| `C` | 1 |
+| `D` | 0 |
+
 ## Category Distribution
 
 | Category | Average |
 | --- | ---: |
-| `computational_graph_score` | 24.14 |
-| `learned_filters_score` | 18.48 |
+| `graph_score` | 24.14 |
+| `filters_score` | 18.48 |
 | `feature_maps_score` | 24.24 |
-| `figure_explainability_score` | 11.52 |
+| `figure_evidence_score` | 11.52 |
 
 ## Common Figure Deductions
 
@@ -32,8 +42,15 @@ Generated: `2026-04-20T20:43:35+08:00`
 
 - none recorded
 
+## Unresolved Policy Issues
+
+- Late submission handling remains TODO until instructor confirmation.
+- Dense non-CNN submissions are not awarded full learned-filter/feature-map credit unless instructor policy changes.
+- Text-only or source-comment computational graphs remain partial-credit figure evidence unless accepted by the instructor.
+
 ## Policy Notes
 
 - Figure score is independent from code score.
 - A missing graph can make the figure score low even if code and accuracy are strong.
 - Filters and feature maps must be tied to the submitted model to receive full credit.
+- Visual polish does not replace true learned filters, intermediate feature maps, notation, or code alignment.

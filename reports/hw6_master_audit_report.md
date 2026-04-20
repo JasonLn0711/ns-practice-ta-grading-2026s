@@ -1,34 +1,53 @@
 # HW6 Master Dual-Score Audit Report
 
-Generated: `2026-04-20T20:43:35+08:00`
+Generated: `2026-04-20T21:07:23+08:00`
 
 ## Summary
 
+- Total submissions represented in dual-score files: 21
 - Graded successfully: 21
 - Graded with manual review flag: 0
 - Not graded due to missing evidence: 4
 - Unmatched in workbook: 0
-- Average HW6(code): 88.90
+- Average HW6(code): 88.38
 - Average HW6(figure): 78.38
+
+## Evidence Levels - Code
+
+| Evidence level | Count |
+| --- | ---: |
+| `A` | 13 |
+| `B` | 8 |
+| `C` | 0 |
+| `D` | 0 |
+
+## Evidence Levels - Figure
+
+| Evidence level | Count |
+| --- | ---: |
+| `A` | 11 |
+| `B` | 9 |
+| `C` | 1 |
+| `D` | 0 |
 
 ## Code Score Distribution
 
 | Category | Average |
 | --- | ---: |
 | `architecture_score` | 23.38 |
-| `graph_consistent_code_score` | 12.43 |
-| `training_algorithm_score` | 24.38 |
-| `result_quality_score` | 19.90 |
-| `evidence_auditability_score` | 8.81 |
+| `graph_code_alignment_score` | 12.43 |
+| `training_method_score` | 24.38 |
+| `result_score` | 19.38 |
+| `evidence_score` | 8.81 |
 
 ## Figure Score Distribution
 
 | Category | Average |
 | --- | ---: |
-| `computational_graph_score` | 24.14 |
-| `learned_filters_score` | 18.48 |
+| `graph_score` | 24.14 |
+| `filters_score` | 18.48 |
 | `feature_maps_score` | 24.24 |
-| `figure_explainability_score` | 11.52 |
+| `figure_evidence_score` | 11.52 |
 
 ## Most Common Code Deduction Reasons
 
@@ -36,6 +55,7 @@ Generated: `2026-04-20T20:43:35+08:00`
 - `CODE_ARCH_REPLACEMENT_INCOMPLETE`: 4
 - `CODE_GRAPH_NOTATION_MISMATCH`: 11
 - `CODE_MOMENTUM_MISSING`: 1
+- `CODE_RESULT_BAND_BELOW_FULL`: 6
 
 ## Most Common Figure Deduction Reasons
 
@@ -53,6 +73,14 @@ Generated: `2026-04-20T20:43:35+08:00`
 - Text-only graph and source-comment graph formats remain policy-sensitive.
 - Dense non-CNN submissions are not awarded full CNN filter/feature-map credit unless the instructor changes policy.
 
+## Rubric Interpretation Notes For Future Consistency
+
+- `HW6(code)` and `HW6(圖)` are independent 100-point scores.
+- No score should be awarded without inspectable evidence.
+- Every non-full category must have a deduction tag and written reason.
+- Accuracy can earn result-band points only when it is credible and traceable to the submitted HW6 model.
+- Figure credit requires graph/filter/feature-map evidence, not just attractive screenshots.
+
 ## Audit Sources
 
 - `grading/hw6/code_scores.csv`
@@ -60,4 +88,4 @@ Generated: `2026-04-20T20:43:35+08:00`
 - `grading/hw6/combined_summary.csv`
 - `grading/hw6/code_deduction_log.csv`
 - `grading/hw6/figure_deduction_log.csv`
-- `grading/hw6/student_notes/`
+- `grading/hw6/feedback/`
