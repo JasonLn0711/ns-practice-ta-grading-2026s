@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Summarize a homework score CSV."""
+"""Summarize score CSVs for HW5/HW6."""
 
 from __future__ import annotations
 
@@ -14,12 +14,12 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Summarize grading scores.")
-    parser.add_argument("--homework", choices=["hw5", "hw6"], default="hw5")
+    parser.add_argument("--homework", choices=["hw5", "hw6"], required=True)
     parser.add_argument("--scores", type=Path)
     return parser.parse_args()
 
 
-def to_float(value: str) -> float:
+def number(value: str) -> float:
     try:
         return float(value)
     except (TypeError, ValueError):
@@ -28,6 +28,10 @@ def to_float(value: str) -> float:
 
 def yes(value: str) -> bool:
     return value.strip().lower() in {"yes", "y", "true", "1"}
+
+
+def split_tags(text: str) -> list[str]:
+    return [tag.strip() for tag in text.replace(";", ",").split(",") if tag.strip()]
 
 
 def main() -> int:
@@ -41,30 +45,34 @@ def main() -> int:
     with scores_path.open(newline="", encoding="utf-8") as handle:
         rows = list(csv.DictReader(handle))
 
+    print(f"Homework: {args.homework}")
+    print(f"Scores file: {scores_path}")
+    print(f"Rows: {len(rows)}")
+
     if not rows:
-        print(f"No score rows yet: {scores_path}")
+        print("No graded rows yet.")
         return 0
 
-    totals = [to_float(row.get("total_score", "")) for row in rows]
-    manual_rows = [row for row in rows if yes(row.get("manual_review_needed", ""))]
-    tags = Counter(row.get("feedback_tag", "").strip() or "untagged" for row in rows)
+    totals = [number(row.get("total_score", "")) for row in rows]
+    manual = [row for row in rows if yes(row.get("manual_review_needed", ""))]
+    evidence = Counter(row.get("evidence_level", "").strip() or "unset" for row in rows)
+    deductions = Counter(tag for row in rows for tag in split_tags(row.get("deduction_summary", "")))
 
-    print(f"Homework: {args.homework}")
-    print(f"Rows: {len(rows)}")
     print(f"Average total: {sum(totals) / len(totals):.2f}")
     print(f"Min total: {min(totals):.2f}")
     print(f"Max total: {max(totals):.2f}")
-    print(f"Manual review needed: {len(manual_rows)}")
+    print(f"Manual review needed: {len(manual)}")
 
-    print("\nFeedback tags:")
-    for tag, count in sorted(tags.items()):
-        print(f"- {tag}: {count}")
+    print("\nEvidence levels:")
+    for level, count in sorted(evidence.items()):
+        print(f"- {level}: {count}")
 
-    if manual_rows:
-        print("\nManual review rows:")
-        for row in manual_rows:
-            student = row.get("student_id") or row.get("student_name") or row.get("submission_name")
-            print(f"- {student}: {row.get('notes', '').strip()}")
+    print("\nDeduction tags:")
+    if deductions:
+        for tag, count in sorted(deductions.items()):
+            print(f"- {tag}: {count}")
+    else:
+        print("- none recorded")
 
     return 0
 
