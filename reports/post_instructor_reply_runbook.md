@@ -71,6 +71,7 @@ adjustment is required.
 python3 scripts/validate_grading_records.py --homework hw5
 python3 scripts/validate_hw6_dual_grading.py
 python3 scripts/build_hw6_dual_reports.py
+python3 scripts/check_release_gate.py --write
 python3 -m py_compile scripts/*.py
 git diff --check
 ```
@@ -150,6 +151,7 @@ python3 scripts/validate_grading_records.py --homework hw5
 python3 scripts/validate_hw6_dual_grading.py
 python3 scripts/summarize_scores.py --homework hw5
 python3 scripts/build_hw6_dual_reports.py
+python3 scripts/check_release_gate.py --write
 python3 -m py_compile scripts/*.py
 git diff --check
 ```
@@ -183,6 +185,7 @@ Before release or LMS import:
 - [ ] Late policy is either applied or explicitly marked not applicable.
 - [ ] HW5 validation passes.
 - [ ] HW6 dual-score validation passes.
+- [ ] `python3 scripts/check_release_gate.py --write` reports no blockers.
 - [ ] Reports reflect any changes.
 - [ ] Student-facing feedback has been generated only after policy confirmation.
 - [ ] The scored workbook copy is current if HW6 scores changed.

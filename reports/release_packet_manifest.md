@@ -21,6 +21,7 @@ Send or paste these first:
 | `reports/instructor_email_draft.md` | Email body Jason can send or adapt. | yes |
 | `reports/instructor_policy_confirmation_packet.md` | Detailed policy questions and current TA treatment. | yes |
 | `reports/post_instructor_reply_runbook.md` | Controlled workflow after the instructor replies. | yes |
+| `reports/final_release_gate_report.md` | Machine-generated release blocker report. | yes |
 | `reports/hw5_instructor_report.md` | HW5 summary, category averages, common deductions, policy issues. | yes |
 | `reports/hw6_master_audit_report.md` | HW6 dual-score summary, category averages, common deductions, and workbook status. | yes |
 | `reports/hw6_code_audit_report.md` | HW6(code) category averages and code deduction patterns. | yes |
@@ -59,6 +60,7 @@ Do not send:
 | HW5 validation | passed | `python3 scripts/validate_grading_records.py --homework hw5` |
 | HW6 dual validation | passed | `python3 scripts/validate_hw6_dual_grading.py` |
 | HW6 workbook write-back | done | `reports/hw6_workbook_writeback_report.md` |
+| Final release gate checker | blocked as expected | `python3 scripts/check_release_gate.py --write` |
 | Instructor policy confirmation | pending | `reports/release_decision_log.md` |
 | Late policy applied | pending | no late penalty applied yet |
 | Student-facing feedback generated | blocked | wait for instructor confirmation |
@@ -83,6 +85,7 @@ Do not send:
 5. Re-run validation:
 
 ```bash
+python3 scripts/check_release_gate.py --write
 python3 scripts/validate_grading_records.py --homework hw5
 python3 scripts/validate_hw6_dual_grading.py
 python3 scripts/build_hw6_dual_reports.py

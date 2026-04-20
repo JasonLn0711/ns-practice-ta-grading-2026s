@@ -19,6 +19,7 @@ Validation commands passed:
 - `python3 scripts/validate_grading_records.py --homework hw5`
 - `python3 scripts/validate_hw6_dual_grading.py`
 - `python3 scripts/build_hw6_dual_reports.py`
+- `python3 scripts/check_release_gate.py --write`
 - `python3 -m py_compile scripts/*.py`
 
 ## Release Gate
@@ -94,6 +95,7 @@ Only adjust these if the instructor changes policy. Otherwise leave the current 
 - `reports/instructor_confirmation_outbox.md`
 - `reports/instructor_email_draft.md`
 - `reports/post_instructor_reply_runbook.md`
+- `reports/final_release_gate_report.md`
 - `reports/release_packet_manifest.md`
 - `reports/instructor_policy_confirmation_packet.md`
 - `reports/release_decision_log.md`
