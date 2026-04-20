@@ -23,3 +23,7 @@ course_materials/*/raw/*
 
 course_materials/*/renamed/*
 !course_materials/*/renamed/.gitkeep
+
+# Local email/export packets. The source reports are versioned; generated
+# attachment folders are local working copies only.
+release_packets/

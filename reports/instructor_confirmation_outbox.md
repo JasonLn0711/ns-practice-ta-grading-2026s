@@ -71,7 +71,14 @@ Jason
 
 ## Default Attachments
 
-Attach these summary/policy files by default, or paste the policy packet inline:
+Attach files from the sanitized local packet folder by default:
+
+```text
+release_packets/instructor_confirmation_2026-04-20/
+```
+
+The packet folder contains copies of these summary/policy files, or you can
+paste the policy packet inline:
 
 | File | Purpose |
 | --- | --- |
@@ -112,10 +119,11 @@ Date sent: 2026-04-20
 Recipient:
 Subject: BEBN20024 HW5/HW6 grading completed - policy confirmation needed before release
 Files sent or pasted:
-- reports/instructor_policy_confirmation_packet.md
-- reports/hw5_instructor_report.md
-- reports/hw6_instructor_report.md
-- reports/hw6_master_audit_report.md
+- release_packets/instructor_confirmation_2026-04-20/instructor_confirmation_outbox.md
+- release_packets/instructor_confirmation_2026-04-20/instructor_policy_confirmation_packet.md
+- release_packets/instructor_confirmation_2026-04-20/hw5_instructor_report.md
+- release_packets/instructor_confirmation_2026-04-20/hw6_instructor_report.md
+- release_packets/instructor_confirmation_2026-04-20/hw6_master_audit_report.md
 Pending decisions: HW5-D1 through HW5-D5, HW6-D1 through HW6-D5
 Notes: Waiting for instructor policy confirmation before student-facing release or LMS import.
 ```

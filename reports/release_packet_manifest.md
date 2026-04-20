@@ -19,6 +19,7 @@ Send or paste these first:
 | `reports/instructor_confirmation_send_checklist.md` | Operational checklist for sending and logging instructor confirmation. | yes |
 | `reports/instructor_confirmation_outbox.md` | Copy-pasteable outgoing email and attachment list. | yes |
 | `reports/instructor_email_draft.md` | Email body Jason can send or adapt. | yes |
+| `reports/instructor_packet_build_report.md` | Versioned record of the sanitized local packet contents. | yes |
 | `reports/instructor_policy_confirmation_packet.md` | Detailed policy questions and current TA treatment. | yes |
 | `reports/post_instructor_reply_runbook.md` | Controlled workflow after the instructor replies. | yes |
 | `reports/final_release_gate_report.md` | Machine-generated release blocker report. | yes |
@@ -60,6 +61,7 @@ Do not send:
 | HW5 validation | passed | `python3 scripts/validate_grading_records.py --homework hw5` |
 | HW6 dual validation | passed | `python3 scripts/validate_hw6_dual_grading.py` |
 | HW6 workbook write-back | done | `reports/hw6_workbook_writeback_report.md` |
+| Instructor packet built | done | `reports/instructor_packet_build_report.md` |
 | Final release gate checker | blocked as expected | `python3 scripts/check_release_gate.py --write` |
 | Instructor policy confirmation | pending | `reports/release_decision_log.md` |
 | Late policy applied | pending | no late penalty applied yet |
@@ -69,6 +71,7 @@ Do not send:
 ## Pre-Send Checklist
 
 - [ ] Use `reports/instructor_confirmation_send_checklist.md` as the operational checklist.
+- [ ] Use files from `release_packets/instructor_confirmation_2026-04-20/` as the safe attachment folder.
 - [ ] Read `reports/instructor_email_draft.md`.
 - [ ] Confirm recipient and course context.
 - [ ] Decide whether to paste the policy packet into the email or attach it.

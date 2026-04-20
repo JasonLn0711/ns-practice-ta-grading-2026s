@@ -19,7 +19,13 @@ that could affect score release.
 
 ## Default Materials To Send
 
-Send or paste these files first:
+Use the local packet folder first:
+
+```text
+release_packets/instructor_confirmation_2026-04-20/
+```
+
+It contains copies of these approved summary/policy files:
 
 | File | Use |
 | --- | --- |
@@ -59,7 +65,7 @@ through a secure channel:
 - [ ] If needed, compare it against `reports/instructor_email_draft.md`.
 - [ ] Confirm the recipient and course name.
 - [ ] Paste the email body into the mail client.
-- [ ] Attach only the default summary/policy files above, or paste the policy packet inline.
+- [ ] Attach files from `release_packets/instructor_confirmation_2026-04-20/`, or paste the policy packet inline.
 - [ ] Verify the email includes these current summary numbers:
   - HW5: `21` graded rows, average `90.76`, manual reviews `0`
   - HW6(code): `21` graded rows, average `88.38`, manual reviews `0`

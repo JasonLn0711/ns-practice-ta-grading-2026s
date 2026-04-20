@@ -93,6 +93,7 @@ Only adjust these if the instructor changes policy. Otherwise leave the current 
 
 - `reports/instructor_confirmation_send_checklist.md`
 - `reports/instructor_confirmation_outbox.md`
+- `reports/instructor_packet_build_report.md`
 - `reports/instructor_email_draft.md`
 - `reports/post_instructor_reply_runbook.md`
 - `reports/final_release_gate_report.md`
@@ -116,10 +117,10 @@ Only adjust these if the instructor changes policy. Otherwise leave the current 
 
 ## Recommended Next Action
 
-Use `reports/instructor_email_draft.md` as the outgoing message and
-`reports/release_packet_manifest.md` as the attachment checklist. Send
-`reports/instructor_policy_confirmation_packet.md` to the instructor, with the
-two instructor reports available as supporting attachments. Record the reply in
+Use `reports/instructor_confirmation_outbox.md` as the outgoing message and
+attach files from `release_packets/instructor_confirmation_2026-04-20/`.
+`reports/instructor_packet_build_report.md` records exactly which files are in
+that sanitized packet. Record the send event and reply in
 `reports/release_decision_log.md`. If the instructor accepts the current policy,
 freeze the score CSVs and generate student-facing feedback. If the instructor
 changes policy, adjust only the targeted rows listed above and record the change

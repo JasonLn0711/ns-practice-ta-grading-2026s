@@ -21,6 +21,7 @@ REPORT_PATH = ROOT / "reports" / "final_release_gate_report.md"
 REQUIRED_FILES = [
     "reports/instructor_confirmation_outbox.md",
     "reports/instructor_confirmation_send_checklist.md",
+    "reports/instructor_packet_build_report.md",
     "reports/post_instructor_reply_runbook.md",
     "reports/release_decision_log.md",
     "reports/release_packet_manifest.md",
@@ -36,6 +37,15 @@ REQUIRED_FILES = [
     "grading/hw6/combined_summary.csv",
     "grading/hw6/code_deduction_log.csv",
     "grading/hw6/figure_deduction_log.csv",
+]
+
+PACKET_DIR = ROOT / "release_packets" / "instructor_confirmation_2026-04-20"
+PACKET_FILES = [
+    "instructor_confirmation_outbox.md",
+    "instructor_policy_confirmation_packet.md",
+    "hw5_instructor_report.md",
+    "hw6_instructor_report.md",
+    "hw6_master_audit_report.md",
 ]
 
 FORBIDDEN_TRACKED_PARTS = [
@@ -177,6 +187,16 @@ def check_workbook_output() -> CheckResult:
     return CheckResult("HW6 workbook copy", "pass", "output workbook exists and is ignored")
 
 
+def check_instructor_packet() -> CheckResult:
+    missing = [name for name in PACKET_FILES if not (PACKET_DIR / name).exists()]
+    if missing:
+        return CheckResult("Instructor packet", "fail", "missing " + ", ".join(missing))
+    code, output = run(["git", "check-ignore", str(PACKET_DIR.relative_to(ROOT))])
+    if code != 0:
+        return CheckResult("Instructor packet", "fail", "release packet directory is not ignored by Git")
+    return CheckResult("Instructor packet", "pass", f"{len(PACKET_FILES)} files present and ignored")
+
+
 def render_report(results: list[CheckResult]) -> str:
     blockers = [result for result in results if result.status == "blocked"]
     failures = [result for result in results if result.status == "fail"]
@@ -231,6 +251,7 @@ def main() -> int:
     results.append(check_required_files())
     results.extend(check_validations())
     results.append(check_workbook_output())
+    results.append(check_instructor_packet())
     results.append(check_forbidden_tracked_files())
     results.append(check_git_status())
     results.extend(check_decision_log())
