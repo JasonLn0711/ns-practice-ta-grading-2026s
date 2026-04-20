@@ -219,6 +219,10 @@ def render_report(results: list[CheckResult]) -> str:
     blockers = [result for result in results if result.status == "blocked"]
     failures = [result for result in results if result.status == "fail"]
     ready = not blockers and not failures
+    recipient_blocked = any(
+        result.name == "Instructor recipient" and result.status == "blocked"
+        for result in results
+    )
 
     lines = [
         "# Final Release Gate Report",
@@ -255,8 +259,13 @@ def render_report(results: list[CheckResult]) -> str:
         "",
         "## Next Action",
         "",
-        "- If the instructor recipient is still blocked, confirm the address from E3, a prior course email, or the instructor directly.",
-        "- Once the recipient is confirmed, send `reports/instructor_confirmation_outbox.md` with only the sanitized packet files.",
+    ])
+    if recipient_blocked:
+        lines.append("- Confirm the instructor address from E3, a prior course email, or the instructor directly.")
+    else:
+        lines.append("- Send `reports/instructor_confirmation_outbox.md` to the recorded recipient with only the sanitized packet files.")
+        lines.append("- Record the completed send event in `reports/release_decision_log.md`.")
+    lines.extend([
         "- After the instructor replies, use `reports/post_instructor_reply_runbook.md`.",
         "- Re-run this script after recording the reply and applying any policy changes.",
         "",
