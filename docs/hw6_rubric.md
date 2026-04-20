@@ -1,72 +1,204 @@
 # HW6 Rubric
 
-## Purpose
+Total score: `100`.
 
-Grade HW6 consistently while separating objective evidence from manual judgment.
+HW6 asks students to replace a fully connected layer with two more hidden layers,
+draw a computational graph similar to slide 48, use that notation in code, train
+with mini-batch stochastic gradient with momentum, reach at least `98%` MNIST
+test accuracy, and plot learned filters plus intermediate feature maps.
 
-HW6 asks students to replace a fully connected layer with two more hidden layers, draw a computational graph, use mini-batch stochastic gradient with momentum, reach at least `98%` MNIST test accuracy, and plot learned filters / intermediate feature maps.
+## Category Breakdown
 
-Current supporting course materials are stored in `course_materials/hw6/`:
-the HW6 assignment spec, Lecture 6 CNN slides, and the CNN MNIST batch/momentum notebooks.
+| Category | Points |
+| --- | ---: |
+| Submission completeness | 10 |
+| Architecture modification correctness | 15 |
+| Computational graph correctness | 15 |
+| Training method correctness | 20 |
+| Result quality | 10 |
+| Visualization requirements | 15 |
+| Evidence and auditability | 15 |
 
-## Required Submission Components
+## Submission Completeness: 10
 
-Visible from current assignment file:
+Full credit:
 
-- computational graph similar to slide 48
-- code using graph notation
-- model with two additional hidden layers replacing the fully connected layer
-- mini-batch stochastic gradient with momentum
-- MNIST test accuracy result at least `98%`
-- learned filters plot
-- intermediate feature-map plot for an arbitrary input digit
+- relevant HW6 submission is present
+- code or notebook is present
+- computational graph evidence is present
+- result evidence is present
+- visualization evidence is present
+- submission can be mapped to one student
 
-TODO instructor confirmation:
+Partial credit:
 
-- expected drawing format
-- expected code format
-- whether plots may be screenshots, notebook outputs, or separate image files
-- whether code execution is required during grading
-- whether exact slide-48 notation is mandatory or approximate notation is acceptable
+- `7`: one required artifact is hard to locate but likely present
+- `4`: code present but graph or visualization evidence is missing
+- `2`: only screenshots/report fragments are present
 
-## Scoring Breakdown
+Zero credit:
 
-Proposed `100` point structure until instructor confirms otherwise:
+- no relevant HW6 submission
+- file cannot be opened and no replacement is allowed
 
-| Category | Points | What To Check |
-| --- | ---: | --- |
-| Completeness | 20 | Graph, code, accuracy, filters, and feature maps are present |
-| Correctness | 40 | Architecture, training method, and momentum update match the assignment |
-| Reproducibility | 15 | Code/output can be reasonably rerun or verified |
-| Clarity | 15 | Graph notation, code structure, and plots are understandable |
-| Visualization quality | 10 | Learned filters and feature maps are legible and tied to the chosen input |
+Auto-checkable: file existence, file type, archive readability, student map.
 
-## Auto-Checkable Items
+Manual-review needed: whether embedded notebook output is enough for graph or
+visualization evidence.
 
-- submission file exists
-- notebook or script exists
-- graph image/PDF/notebook output exists
-- filter plot exists
-- feature-map plot exists
-- visible mention of momentum
-- visible mention of MNIST test accuracy
+## Architecture Modification Correctness: 15
 
-## Manual-Review Items
+Full credit:
 
-- whether the graph matches the implemented code
-- whether two extra hidden layers were added correctly
-- whether mini-batch SGD with momentum is implemented, not merely mentioned
-- whether the `98%` accuracy claim is credible
-- whether plots are meaningful, not decorative
+- the fully connected layer replacement is visible
+- two additional hidden layers are implemented
+- layer dimensions/flow are internally consistent
 
-## Deduction Rules
+Partial credit:
 
-- Missing computational graph: deduct from completeness and clarity.
-- Graph and code notation do not match: deduct from correctness/clarity.
-- Missing momentum: deduct from correctness.
-- Missing learned-filter or feature-map plot: deduct from completeness/visualization.
-- Accuracy below `98%`: deduct from correctness, unless instructor grants exception.
-- Non-runnable code with no output evidence: deduct from reproducibility.
+- `10`: architecture is mostly correct but dimensions/flow are unclear
+- `7`: extra layers exist but the replacement requirement is ambiguous
+- `4`: code contains model changes but not the requested architecture
+
+Zero credit:
+
+- no architecture modification evidence
+
+Auto-checkable: basic code/notebook presence.
+
+Manual-review needed: all architecture correctness decisions.
+
+## Computational Graph Correctness: 15
+
+Full credit:
+
+- computational graph is present
+- graph is similar to the required slide-48 style
+- notation used in the graph is reflected in the code
+
+Partial credit:
+
+- `10`: graph present but code-notation link is incomplete
+- `7`: graph present but too vague to verify fully
+- `4`: graph-like image exists but is not clearly the model graph
+
+Zero credit:
+
+- no computational graph evidence
+
+Auto-checkable: graph-named files or graph keywords.
+
+Manual-review needed: graph correctness and notation alignment.
+
+## Training Method Correctness: 20
+
+Full credit:
+
+- mini-batch stochastic gradient training is implemented
+- momentum is implemented in the update, not merely mentioned
+- training loop is connected to the HW6 model
+
+Suggested point split:
+
+- mini-batch training: 7
+- momentum update: 8
+- integration with model/training loop: 5
+
+Partial credit:
+
+- cap at `12` if momentum is mentioned but implementation is unclear
+- cap at `10` if mini-batch training is visible but momentum is absent
+- cap at `8` if training loop is not connected to the submitted model
+
+Zero credit:
+
+- no relevant training implementation
+
+Auto-checkable: momentum and batch keyword indicators.
+
+Manual-review needed: whether momentum is actually implemented.
+
+## Result Quality: 10
+
+Full credit:
+
+- MNIST test accuracy is reported as at least `98%`
+- result is tied to the submitted HW6 model
+
+Partial credit:
+
+- `7`: accuracy is close to target but below `98%`
+- `5`: result is reported but train/test distinction is unclear
+- `3`: unsupported accuracy claim only
+
+Zero credit:
+
+- no result evidence
+- result is unrelated to MNIST test accuracy
+
+Auto-checkable: visible accuracy/result indicators.
+
+Manual-review needed: credibility and near-threshold cases.
+
+## Visualization Requirements: 15
+
+Full credit:
+
+- learned filters are plotted
+- intermediate feature maps are plotted
+- feature-map plot is tied to an arbitrary input digit
+
+Suggested point split:
+
+- learned filter plot: 7
+- feature-map plot: 7
+- chosen input digit context: 1
+
+Partial credit:
+
+- award visible subpoints independently
+- cap at `8` if plots are present but not tied to the implemented model
+
+Zero credit:
+
+- no relevant visualization evidence
+
+Auto-checkable: filter/feature-map filenames or keywords.
+
+Manual-review needed: whether plots are meaningful and linked to the model.
+
+## Evidence and Auditability: 15
+
+Full credit:
+
+- Level A evidence: code + logs/outputs + result + traceable model/training
+  configuration
+- deduction reasons can be tied to rubric items
+
+Evidence caps:
+
+- Level A: max `15`
+- Level B: max `10`
+- Level C: max `5`
+
+Zero credit:
+
+- no auditable evidence
+- grader cannot connect score to submitted artifacts
+
+Auto-checkable: evidence-level field exists in score CSV.
+
+Manual-review needed: evidence level assignment.
+
+## Standard Deduction Rules
+
+- Missing graph: apply `COMPUTATIONAL_GRAPH_MISSING`.
+- Momentum absent or unsupported: apply `MOMENTUM_NOT_IMPLEMENTED`.
+- Missing learned filters: apply `FILTER_PLOT_MISSING`.
+- Missing feature maps: apply `FEATURE_MAP_MISSING`.
+- Cannot verify reported result: apply `CANNOT_VERIFY_RESULT`.
+- Possible copying: apply `POSSIBLE_COPYING_MANUAL_REVIEW` and do not make an
+  unsupported accusation.
 
 ## Zero-Score Conditions
 
@@ -75,33 +207,13 @@ Use only when clearly justified:
 - no relevant submission
 - file cannot be opened and no replacement is allowed
 - submission is unrelated to HW6
-- confirmed academic-integrity violation, after instructor decision
+- confirmed academic-integrity violation after instructor decision
 
-## Partial-Credit Guidelines
+## TODO: Instructor Confirmation
 
-- Give graph credit separately from code credit.
-- Give visualization credit separately from accuracy credit.
-- Give implementation credit even if final accuracy misses the target.
-- Do not double-penalize the same missing file in every category.
-
-## Edge Cases Requiring Instructor Confirmation
-
-- graph exists but does not use slide-48 notation
-- code uses a high-level framework instead of lecture-style implementation
-- plots are present but generated from the wrong model
-- accuracy slightly below `98%`
-- late submission with no visible policy note
-- suspected copied code
-
-## Feedback Tags
-
-- `missing-graph`
-- `missing-code`
-- `missing-momentum`
-- `missing-filter-plot`
-- `missing-feature-map`
-- `accuracy-below-target`
-- `not-reproducible`
-- `unclear-notation`
-- `good-complete`
-- `manual-review`
+- whether graph notation must exactly match slide 48
+- accepted graph/plot formats
+- whether graders must rerun code
+- exact late policy
+- whether external frameworks are allowed
+- how to handle accuracy slightly below `98%`
