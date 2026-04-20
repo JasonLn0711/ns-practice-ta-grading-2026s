@@ -11,3 +11,7 @@ student_id,student_name,hw_id,submission_path,completeness_score,architecture_sc
 314264009,張庭榮,hw6,submissions/hw6/renamed/hw6_314264009_01_homework6.ipynb,10,15,15,20,10,15,15,0,100,A,no,,Jason,2026-04-20T19:59:56+08:00
 314264011,許浩哲,hw6,submissions/hw6/renamed,10,12,15,20,10,15,15,0,97,A,no,CODE_INCOMPLETE,Jason,2026-04-20T19:59:56+08:00
 314264012,游晟彬,hw6,submissions/hw6/renamed/hw6_314264012_01_hw6.ipynb,10,15,15,20,10,15,15,0,100,A,no,,Jason,2026-04-20T19:59:56+08:00
+314264013,張達瑋,hw6,submissions/hw6/renamed,10,15,15,20,10,15,15,0,100,A,no,,Jason,2026-04-20T20:03:01+08:00
+314264019,游乙倢,hw6,submissions/hw6/renamed/hw6_314264019_01_hw6.ipynb,8,15,0,20,10,15,10,0,78,B,no,MISSING_REQUIRED_FILE;COMPUTATIONAL_GRAPH_MISSING,Jason,2026-04-20T20:03:01+08:00
+314264023,蔡宜勳,hw6,submissions/hw6/renamed/hw6_314264023_01_hw06.ipynb,8,15,0,20,10,15,10,0,78,B,no,MISSING_REQUIRED_FILE;COMPUTATIONAL_GRAPH_MISSING,Jason,2026-04-20T20:03:01+08:00
+314264024,王靖崴,hw6,submissions/hw6/renamed/hw6_314264024_01_hw6.ipynb,9,15,12,20,10,15,15,0,96,A,no,MISSING_REQUIRED_FILE;CODE_INCOMPLETE,Jason,2026-04-20T20:03:01+08:00
