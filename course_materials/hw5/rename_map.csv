@@ -1,0 +1,18 @@
+original_filename,new_filename,notes
+05_Training of Multi-Layer Neural Network.pdf,hw5_course_lecture05-training-multi-layer-neural-network.pdf,Lecture 5 reference slides for multi-layer neural network/backpropagation context.
+Homework 4 .pdf,hw5_course_homework04-context-spec.pdf,HW4 assignment spec; used as prerequisite/context because HW5 says to modify HW4 code.
+Homework 5 .pdf,hw5_course_homework05-assignment-spec.pdf,HW5 assignment spec and primary grading reference.
+06_drop_out.ipynb,hw5_reference_06-drop-out.ipynb,Reference notebook for forward/back replacement and dropout/ReLU-related lecture code.
+02_neural_network_classifier.ipynb,hw5_reference_02-neural-network-classifier.ipynb,Reference neural-network classifier notebook.
+03_batching.ipynb,hw5_reference_03-batching.ipynb,Reference notebook for mini-batch preparation/training concepts.
+05_development.ipynb,hw5_reference_05-development-configuration.ipynb,Reference notebook containing the configuration workflow named in the HW5 assignment.
+04_testing.ipynb,hw5_reference_04-testing-hw4-base.ipynb,Reference/base testing notebook connected to HW4/HW5 modifications.
+01_perceptron_classifier.ipynb,hw5_reference_01-perceptron-classifier.ipynb,Reference perceptron classifier notebook for course context.
+linearly_separable.txt,hw5_reference_linearly-separable-data.txt,Small sample dataset for lecture examples.
+circles.txt,hw5_reference_circles-data.txt,Small non-linear sample dataset for lecture examples.
+non_linearly_separable.txt,hw5_reference_non-linearly-separable-data.txt,Small non-linearly separable sample dataset for lecture examples.
+data/mnist/train-labels-idx1-ubyte.gz,mnist/hw5_reference_mnist_train-labels-idx1-ubyte.gz,MNIST training labels IDX gzip verified magic 2049 count 60000.
+data/mnist/train-images-idx3-ubyte.gz,mnist/hw5_reference_mnist_train-images-idx3-ubyte.gz,MNIST training images IDX gzip verified magic 2051 count 60000 shape 28x28.
+data/mnist/t10k-labels-idx1-ubyte.gz,mnist/hw5_reference_mnist_test-labels-idx1-ubyte.gz,MNIST test labels IDX gzip verified magic 2049 count 10000.
+data/mnist/t10k-images-idx3-ubyte.gz,mnist/hw5_reference_mnist_test-images-idx3-ubyte.gz,MNIST test images IDX gzip verified magic 2051 count 10000 shape 28x28.
+data/mnist/readme.txt,mnist/hw5_reference_mnist_readme.txt,MNIST readme pointing to the original dataset page.

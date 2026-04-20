@@ -1,0 +1,25 @@
+# Bulky grading workspace data.
+#
+# This standalone repo versions auditable grading metadata: score sheets,
+# identity maps, per-student notes, deduction logs, reports, docs, templates,
+# and scripts. It intentionally does not version raw submissions, renamed
+# student files, extracted archives, or bulky course-material binaries.
+
+.DS_Store
+__pycache__/
+*.pyc
+
+submissions/*/raw/*
+!submissions/*/raw/.gitkeep
+
+submissions/*/renamed/*
+!submissions/*/renamed/.gitkeep
+
+submissions/*/extracted/*
+!submissions/*/extracted/.gitkeep
+
+course_materials/*/raw/*
+!course_materials/*/raw/.gitkeep
+
+course_materials/*/renamed/*
+!course_materials/*/renamed/.gitkeep
