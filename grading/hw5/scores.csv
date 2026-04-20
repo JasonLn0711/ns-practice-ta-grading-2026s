@@ -1,2 +1,5 @@
 student_id,student_name,hw_id,submission_path,completeness_score,requirement_score,technical_score,result_score,evidence_score,penalty_score,total_score,evidence_level,manual_review_needed,deduction_summary,grader,graded_at
+113304030,鄭丞言,hw5,submissions/hw5/renamed/hw5_113304030_01_homework-5-redone.ipynb,10,30,30,14,15,0,99,A,no,ACCURACY_BELOW_TARGET,Jason,2026-04-20T19:27:17+08:00
+214952033,陳奕樺,hw5,submissions/hw5/renamed/hw5_214952033_01_hw5.ipynb,10,28,24,8,10,0,80,B,no,CODE_INCOMPLETE;TEST_PIPELINE_UNCLEAR;ACCURACY_BELOW_TARGET;WEAK_AUDIT_EVIDENCE,Jason,2026-04-20T19:27:17+08:00
+314264009,張庭榮,hw5,submissions/hw5/renamed/hw5_314264009_01_homework-5.ipynb,10,30,30,14,10,0,94,B,no,ACCURACY_BELOW_TARGET;WEAK_AUDIT_EVIDENCE,Jason,2026-04-20T19:27:17+08:00
 314264011,許浩哲,hw5,submissions/hw5/renamed/hw5_314264011_01_314264011-hw-5.ipynb,10,30,26,15,15,0,96,A,no,NO_HYPERPARAMETER_SEARCH_EVIDENCE,Jason,2026-04-20T19:23:06+08:00
