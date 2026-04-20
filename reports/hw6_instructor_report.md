@@ -1,33 +1,34 @@
 # HW6 Instructor Report
 
-Generated: TODO
+Generated: 2026-04-20T19:53:15
 
 ## Overview
 
-- Number of submissions: TODO
-- Number graded: TODO
-- Average score: TODO
-- Manual reviews: TODO
+- Number of submissions graded: 4
+- Average score: 92.75
+- Manual reviews: 0
 
 ## Distribution By Category
 
-| Category | Average | Common issue |
-| --- | ---: | --- |
-| Submission completeness | TODO | TODO |
-| Architecture modification correctness | TODO | TODO |
-| Computational graph correctness | TODO | TODO |
-| Training method correctness | TODO | TODO |
-| Result quality | TODO | TODO |
-| Visualization requirements | TODO | TODO |
-| Evidence and auditability | TODO | TODO |
+| Category | Average |
+| --- | ---: |
+| completeness_score | 9.25 |
+| architecture_score | 15.00 |
+| graph_score | 11.25 |
+| training_score | 20.00 |
+| result_score | 10.00 |
+| visualization_score | 13.50 |
+| evidence_score | 13.75 |
 
 ## Common Deduction Reasons
 
-- TODO
+- COMPUTATIONAL_GRAPH_MISSING: 2
+- FILTER_PLOT_MISSING: 1
+- MISSING_REQUIRED_FILE: 1
 
-## Suspicious Patterns
+## Manual Reviews
 
-- TODO
+- none recorded
 
 ## Policy Issues Needing Instructor Decision
 

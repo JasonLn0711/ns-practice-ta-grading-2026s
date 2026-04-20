@@ -1,1 +1,5 @@
 student_id,student_name,hw_id,submission_path,completeness_score,architecture_score,graph_score,training_score,result_score,visualization_score,evidence_score,penalty_score,total_score,evidence_level,manual_review_needed,deduction_summary,grader,graded_at
+111550109,黃琮仁,hw6,submissions/hw6/renamed,10,15,15,20,10,15,15,0,100,A,no,,Jason,2026-04-20T19:50:51+08:00
+112654017,蕭景升,hw6,submissions/hw6/renamed,10,15,15,20,10,15,15,0,100,A,no,,Jason,2026-04-20T19:50:51+08:00
+113304030,鄭丞言,hw6,submissions/hw6/renamed/hw6_113304030_01_hw6.ipynb,7,15,0,20,10,9,10,0,71,B,no,MISSING_REQUIRED_FILE;COMPUTATIONAL_GRAPH_MISSING;FILTER_PLOT_MISSING,Jason,2026-04-20T19:50:51+08:00
+113350014,凃宏諭,hw6,submissions/hw6/renamed,10,15,15,20,10,15,15,0,100,A,no,,Jason,2026-04-20T19:50:51+08:00

@@ -1,50 +1,41 @@
 # HW6 Audit Report
 
-Generated: TODO
-Grader: Jason
+Generated: 2026-04-20T19:53:15
 
-## Scope
+## Overview
 
-- Homework: HW6
-- Rubric: `docs/hw6_rubric.md`
-- Score sheet: `grading/hw6/scores.csv`
-- Evidence sheet: `grading/hw6/evidence.csv`
-- Deduction log: `grading/hw6/deduction_log.csv`
+- Number of submissions graded: 4
+- Average score: 92.75
+- Manual reviews: 0
 
-## Submission Summary
+## Distribution By Category
 
-- Number of mapped submissions: TODO
-- Number graded: TODO
-- Number requiring manual review: TODO
-
-## Score Summary
-
-- Average score: TODO
-- Minimum score: TODO
-- Maximum score: TODO
-
-## Category Summary
-
-| Category | Average | Notes |
-| --- | ---: | --- |
-| Submission completeness | TODO |  |
-| Architecture modification correctness | TODO |  |
-| Computational graph correctness | TODO |  |
-| Training method correctness | TODO |  |
-| Result quality | TODO |  |
-| Visualization requirements | TODO |  |
-| Evidence and auditability | TODO |  |
+| Category | Average |
+| --- | ---: |
+| completeness_score | 9.25 |
+| architecture_score | 15.00 |
+| graph_score | 11.25 |
+| training_score | 20.00 |
+| result_score | 10.00 |
+| visualization_score | 13.50 |
+| evidence_score | 13.75 |
 
 ## Common Deduction Reasons
 
-| Deduction tag | Count | Notes |
-| --- | ---: | --- |
-| TODO | TODO |  |
+- COMPUTATIONAL_GRAPH_MISSING: 2
+- FILTER_PLOT_MISSING: 1
+- MISSING_REQUIRED_FILE: 1
 
-## Manual Review Items
+## Manual Reviews
+
+- none recorded
+
+## Policy Issues Needing Instructor Decision
 
 - TODO
 
-## Policy Issues For Instructor
+## Audit Sources
 
-- TODO
+- `grading/hw6/scores.csv`
+- `grading/hw6/deduction_log.csv`
+- `grading/hw6/evidence.csv`

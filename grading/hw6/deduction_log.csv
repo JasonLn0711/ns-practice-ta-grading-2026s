@@ -1,1 +1,5 @@
 student_id,hw_id,deduction_tag,category,points_deducted,evidence_path,note,manual_review_needed,grader,recorded_at
+113304030,hw6,MISSING_REQUIRED_FILE,completeness_score,3,submissions/hw6/renamed/hw6_113304030_01_hw6.ipynb,"Missing required computational graph artifact and learned-filter plot artifact; feature-map output and result logs are present.",no,Jason,2026-04-20T19:50:51+08:00
+113304030,hw6,COMPUTATIONAL_GRAPH_MISSING,graph_score,15,submissions/hw6/renamed/hw6_113304030_01_hw6.ipynb,"No computational graph artifact or graph-like notebook output was found for the submitted HW6 model.",no,Jason,2026-04-20T19:50:51+08:00
+113304030,hw6,FILTER_PLOT_MISSING,visualization_score,6,submissions/hw6/renamed/hw6_113304030_01_hw6.ipynb,"Feature-map plots are retained, but no learned-filter plot tied to the trained convolutional filters was found.",no,Jason,2026-04-20T19:50:51+08:00
+113304030,hw6,COMPUTATIONAL_GRAPH_MISSING,evidence_score,5,submissions/hw6/renamed/hw6_113304030_01_hw6.ipynb,"Missing graph artifact prevents full code/result/graph/plot traceability, so Level B evidence cap applies.",no,Jason,2026-04-20T19:50:51+08:00
