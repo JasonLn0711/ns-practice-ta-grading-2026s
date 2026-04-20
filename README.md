@@ -26,7 +26,8 @@ not based on vague impression. Each non-full score should trace to:
 8. Record scores in `grading/<hw>/scores.csv`.
 9. Record deductions in `grading/<hw>/deduction_log.csv`.
 10. Update the per-student note in `grading/<hw>/student_notes/`.
-11. Generate feedback and reports before releasing scores.
+11. Run `scripts/validate_grading_records.py`.
+12. Generate feedback and reports before releasing scores.
 
 ## Where Things Go
 
@@ -77,10 +78,15 @@ python3 scripts/unpack_archives.py --homework hw5 --apply
 Generate outputs:
 
 ```bash
+python3 scripts/validate_grading_records.py --homework hw5
 python3 scripts/generate_student_feedback.py --homework hw5
 python3 scripts/summarize_scores.py --homework hw5
 python3 scripts/build_audit_report.py --homework hw5
 ```
+
+Validation enforces the grading discipline: no score without evidence metadata,
+no non-full score without a written deduction reason, evidence-level caps, and a
+per-student note for every graded row.
 
 ## Manual Judgment
 
@@ -100,6 +106,7 @@ summaries. Humans must decide:
 - Review every `manual_review_needed=yes` row.
 - Confirm no student received a custom standard.
 - Ensure every deduction has a tag and reason.
+- Run `scripts/validate_grading_records.py --homework hw5` and repeat for HW6.
 - Build the audit and instructor reports.
 - Keep raw submissions and bulky binaries out of Git.
 
