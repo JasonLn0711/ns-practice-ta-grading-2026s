@@ -90,6 +90,7 @@ Only adjust these if the instructor changes policy. Otherwise leave the current 
 
 ## Files To Review Before Release
 
+- `reports/instructor_confirmation_send_checklist.md`
 - `reports/instructor_email_draft.md`
 - `reports/release_packet_manifest.md`
 - `reports/instructor_policy_confirmation_packet.md`
