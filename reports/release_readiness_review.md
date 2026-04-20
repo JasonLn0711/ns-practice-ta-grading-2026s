@@ -8,15 +8,17 @@ Scope: `HW5` and `HW6`
 
 Both homework grading passes are complete from the grading-record side.
 
-| Homework | Score rows | Evidence rows | Average | Manual reviews | Status |
+| Homework / score | Score rows | Evidence rows | Average | Manual reviews | Status |
 | --- | ---: | ---: | ---: | ---: | --- |
 | HW5 | 21 | 21 | 90.76 | 0 | ready for instructor policy review |
-| HW6 | 21 | 21 | 89.43 | 0 | ready for instructor policy review |
+| HW6(code) | 21 | 21 | 88.90 | 0 | workbook copy written |
+| HW6(figure) | 21 | 21 | 78.38 | 0 | workbook copy written |
 
 Validation commands passed:
 
 - `python3 scripts/validate_grading_records.py --homework hw5`
 - `python3 scripts/validate_grading_records.py --homework hw6`
+- `python3 scripts/validate_hw6_dual_grading.py`
 - `python3 -m py_compile scripts/*.py`
 
 ## Release Gate
@@ -56,6 +58,8 @@ Current HW5 policy used in grading:
 
 Current HW6 policy used in grading:
 
+- HW6 is now represented by two independent 100-point scores:
+  `HW6(code)` and `HW6(figure)`.
 - Separate image/PDF graphs and rendered notebook graphs received full graph credit when aligned with code.
 - Text-only graph notation or code comments received partial graph credit.
 - Missing graph artifacts received zero graph credit.
@@ -76,13 +80,13 @@ Only adjust these if the instructor changes policy. Otherwise leave the current 
 
 ### HW6 Policy-Sensitive Students
 
-| Student ID | Current issue | Current score | Possible policy decision |
-| --- | --- | ---: | --- |
-| 314264011 | two hidden layers total; graph otherwise complete | 97 | add architecture credit if instructor accepts two hidden layers total |
-| 314351006 | graph/code hidden-layer mismatch | 87 | adjust only if instructor accepts code architecture and graph mismatch policy |
-| 314264024 | text-only graph notation in notebook source | 96 | add graph/completeness credit if text-only graph format is accepted |
-| 514661019 | graph notation in code comments only | 96 | add graph/completeness credit if source-comment graph format is accepted |
-| 314264029 | dense non-CNN implementation | 83 | adjust only if instructor accepts non-CNN replacement for HW6 |
+| Student ID | Current issue | HW6(code) | HW6(figure) | Possible policy decision |
+| --- | --- | ---: | ---: | --- |
+| 314264011 | two hidden layers total; graph otherwise complete | 97 | 100 | add code architecture credit if instructor accepts two hidden layers total |
+| 314351006 | graph/code hidden-layer mismatch | 86 | 80 | adjust only if instructor accepts code architecture and graph mismatch policy |
+| 314264024 | text-only graph notation in notebook source | 97 | 85 | add figure graph/explainability credit if text-only graph format is accepted |
+| 514661019 | graph notation in code comments only | 98 | 85 | add figure graph/explainability credit if source-comment graph format is accepted |
+| 314264029 | dense non-CNN implementation | 80 | 52 | adjust only if instructor accepts non-CNN replacement for HW6 |
 
 ## Files To Review Before Release
 
@@ -92,10 +96,19 @@ Only adjust these if the instructor changes policy. Otherwise leave the current 
 - `reports/release_decision_log.md`
 - `reports/hw5_instructor_report.md`
 - `reports/hw6_instructor_report.md`
+- `reports/hw6_code_audit_report.md`
+- `reports/hw6_figure_audit_report.md`
+- `reports/hw6_master_audit_report.md`
+- `reports/hw6_workbook_writeback_report.md`
 - `grading/hw5/scores.csv`
 - `grading/hw6/scores.csv`
+- `grading/hw6/code_scores.csv`
+- `grading/hw6/figure_scores.csv`
+- `grading/hw6/combined_summary.csv`
 - `grading/hw5/deduction_log.csv`
 - `grading/hw6/deduction_log.csv`
+- `grading/hw6/code_deduction_log.csv`
+- `grading/hw6/figure_deduction_log.csv`
 
 ## Recommended Next Action
 

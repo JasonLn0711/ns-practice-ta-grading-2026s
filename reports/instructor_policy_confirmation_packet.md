@@ -16,16 +16,18 @@ score adjustment is targeted, consistent, and auditable.
 
 ## Current Status
 
-| Homework | Graded rows | Average | Min | Max | Manual review holds |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| HW5 | 21 | 90.76 | 63 | 100 | 0 |
-| HW6 | 21 | 89.43 | 59 | 100 | 0 |
+| Homework / score | Graded rows | Average | Manual review holds |
+| --- | ---: | ---: | ---: |
+| HW5 | 21 | 90.76 | 0 |
+| HW6(code) | 21 | 88.90 | 0 |
+| HW6(figure) | 21 | 78.38 | 0 |
 
 Validation already passed:
 
 ```bash
 python3 scripts/validate_grading_records.py --homework hw5
 python3 scripts/validate_grading_records.py --homework hw6
+python3 scripts/validate_hw6_dual_grading.py
 python3 -m py_compile scripts/*.py
 ```
 
@@ -36,6 +38,7 @@ python3 -m py_compile scripts/*.py
 - Missing or unverifiable required items do not receive full credit.
 - Every non-full score has a written deduction reason.
 - Per-student grading notes, evidence rows, deduction logs, and score rows are kept for audit.
+- HW6 is reported as two independent 100-point scores: `HW6(code)` and `HW6(figure)`.
 - Suspicious copying would be marked for manual review rather than treated as automatic guilt; no manual review holds are currently recorded.
 
 ## Decisions Requested
@@ -87,13 +90,13 @@ python3 -m py_compile scripts/*.py
 Adjust only these rows if the instructor changes policy. Otherwise leave the
 current scores unchanged for consistency.
 
-| Homework | Student ID | Current score | Policy-sensitive issue |
-| --- | --- | ---: | --- |
-| HW6 | 314264011 | 97 | two hidden layers total; graph otherwise complete |
-| HW6 | 314351006 | 87 | graph/code hidden-layer mismatch |
-| HW6 | 314264024 | 96 | text-only graph notation in notebook source |
-| HW6 | 514661019 | 96 | graph notation in code comments only |
-| HW6 | 314264029 | 83 | dense non-CNN implementation |
+| Homework | Student ID | HW6(code) | HW6(figure) | Policy-sensitive issue |
+| --- | --- | ---: | ---: | --- |
+| HW6 | 314264011 | 97 | 100 | two hidden layers total; graph otherwise complete |
+| HW6 | 314351006 | 86 | 80 | graph/code hidden-layer mismatch |
+| HW6 | 314264024 | 97 | 85 | text-only graph notation in notebook source |
+| HW6 | 514661019 | 98 | 85 | graph notation in code comments only |
+| HW6 | 314264029 | 80 | 52 | dense non-CNN implementation |
 | HW5 | see deduction log | varies | weak/missing hyperparameter-search evidence |
 | HW5 | see deduction log | varies | ambiguous MNIST test/development pipeline |
 
@@ -101,6 +104,10 @@ Detailed evidence is in:
 
 - `grading/hw5/deduction_log.csv`
 - `grading/hw6/deduction_log.csv`
+- `grading/hw6/code_scores.csv`
+- `grading/hw6/figure_scores.csv`
+- `grading/hw6/code_deduction_log.csv`
+- `grading/hw6/figure_deduction_log.csv`
 - `grading/hw5/student_notes/`
 - `grading/hw6/student_notes/`
 
@@ -136,6 +143,7 @@ HW6:
 ```bash
 python3 scripts/validate_grading_records.py --homework hw5
 python3 scripts/validate_grading_records.py --homework hw6
+python3 scripts/validate_hw6_dual_grading.py
 python3 scripts/summarize_scores.py --homework hw5
 python3 scripts/summarize_scores.py --homework hw6
 ```

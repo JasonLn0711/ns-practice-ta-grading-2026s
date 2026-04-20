@@ -21,6 +21,7 @@ Git.
 - renamed working copies of student submissions
 - extracted submission archives
 - bulky course-material binaries
+- workbook binaries and scored workbook copies
 - cache files and temporary build artifacts
 
 ## Rationale
