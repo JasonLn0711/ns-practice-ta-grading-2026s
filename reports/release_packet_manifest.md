@@ -17,6 +17,7 @@ Send or paste these first:
 | File | Purpose | Include by default? |
 | --- | --- | --- |
 | `reports/instructor_confirmation_send_checklist.md` | Operational checklist for sending and logging instructor confirmation. | yes |
+| `reports/instructor_confirmation_outbox.md` | Copy-pasteable outgoing email and attachment list. | yes |
 | `reports/instructor_email_draft.md` | Email body Jason can send or adapt. | yes |
 | `reports/instructor_policy_confirmation_packet.md` | Detailed policy questions and current TA treatment. | yes |
 | `reports/hw5_instructor_report.md` | HW5 summary, category averages, common deductions, policy issues. | yes |

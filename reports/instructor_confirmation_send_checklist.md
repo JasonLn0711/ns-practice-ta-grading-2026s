@@ -55,7 +55,8 @@ through a secure channel:
 
 ## Pre-Send Steps
 
-- [ ] Open `reports/instructor_email_draft.md`.
+- [ ] Open `reports/instructor_confirmation_outbox.md`.
+- [ ] If needed, compare it against `reports/instructor_email_draft.md`.
 - [ ] Confirm the recipient and course name.
 - [ ] Paste the email body into the mail client.
 - [ ] Attach only the default summary/policy files above, or paste the policy packet inline.
@@ -129,6 +130,6 @@ asks for them and the channel is appropriate.
 
 - Instructor policy confirmation is pending.
 - Late policy is pending.
+- Instructor recipient email is not recorded in this repo.
 - Student-facing release should not happen until the instructor reply is logged.
 - Any policy change must be traceable in score rows, deduction notes, and commit history.
-
