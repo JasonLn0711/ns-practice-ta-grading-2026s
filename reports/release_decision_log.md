@@ -51,6 +51,34 @@ Commit:
 Notes:
 ```
 
+## Send Events
+
+Use this section after sending the confirmation message. Do not mark decisions
+approved until the instructor reply is received.
+
+```text
+Date sent:
+Recipient:
+Subject:
+Files sent or pasted:
+Pending decisions:
+Notes:
+```
+
+## Reply Processing
+
+After the instructor replies, use
+`reports/post_instructor_reply_runbook.md` before changing scores. Classify the
+reply as one of:
+
+- `approval_without_changes`
+- `approval_with_late_policy`
+- `policy_change_required`
+- `needs_more_evidence`
+
+If the reply changes policy, adjust only affected rows and preserve the original
+deduction rationale in the student-level audit trail.
+
 ## Change Ledger
 
 - 2026-04-20: HW6 was revised into independent `HW6(code)` and

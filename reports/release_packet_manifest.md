@@ -20,6 +20,7 @@ Send or paste these first:
 | `reports/instructor_confirmation_outbox.md` | Copy-pasteable outgoing email and attachment list. | yes |
 | `reports/instructor_email_draft.md` | Email body Jason can send or adapt. | yes |
 | `reports/instructor_policy_confirmation_packet.md` | Detailed policy questions and current TA treatment. | yes |
+| `reports/post_instructor_reply_runbook.md` | Controlled workflow after the instructor replies. | yes |
 | `reports/hw5_instructor_report.md` | HW5 summary, category averages, common deductions, policy issues. | yes |
 | `reports/hw6_master_audit_report.md` | HW6 dual-score summary, category averages, common deductions, and workbook status. | yes |
 | `reports/hw6_code_audit_report.md` | HW6(code) category averages and code deduction patterns. | yes |
@@ -75,10 +76,11 @@ Do not send:
 
 ## After Instructor Reply
 
-1. Record the reply in `reports/release_decision_log.md`.
-2. If policy is unchanged, mark pending decisions as approved and freeze score CSVs.
-3. If policy changes, adjust only affected rows listed in `reports/instructor_policy_confirmation_packet.md`.
-4. Re-run validation:
+1. Use `reports/post_instructor_reply_runbook.md`.
+2. Record the reply in `reports/release_decision_log.md`.
+3. If policy is unchanged, mark pending decisions as approved and freeze score CSVs.
+4. If policy changes, adjust only affected rows listed in `reports/instructor_policy_confirmation_packet.md`.
+5. Re-run validation:
 
 ```bash
 python3 scripts/validate_grading_records.py --homework hw5
@@ -86,11 +88,11 @@ python3 scripts/validate_hw6_dual_grading.py
 python3 scripts/build_hw6_dual_reports.py
 ```
 
-5. Generate feedback only after policy confirmation:
+6. Generate feedback only after policy confirmation:
 
 ```bash
 python3 scripts/generate_student_feedback.py --homework hw5 --apply
 # HW6 dual-score feedback already lives under grading/hw6/feedback/.
 ```
 
-6. Commit the final release state before importing to LMS.
+7. Commit the final release state before importing to LMS.
