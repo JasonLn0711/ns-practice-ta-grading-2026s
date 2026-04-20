@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import re
 from pathlib import Path
 
 from migration_common import DEFAULT_TARGET, SUBTREE_NAME, read_csv, write_text
@@ -38,7 +39,11 @@ def rewrite_text(text: str, new_root: Path) -> tuple[str, int]:
         updated = updated.replace(f"{SUBTREE_NAME}/docs/hw6-rubric.md", f"{new_root}/docs/hw6_rubric.md")
         updated = updated.replace(f"{SUBTREE_NAME}/docs/grading-policy.md", f"{new_root}/docs/grading_policy.md")
         updated = updated.replace(f"{SUBTREE_NAME}/", f"{new_root}/")
-        updated = updated.replace(SUBTREE_NAME, str(new_root))
+        updated = re.sub(
+            rf"(?<![\w/.-]){re.escape(SUBTREE_NAME)}(?![\w/.-])",
+            str(new_root),
+            updated,
+        )
         if updated != line:
             replacements += 1
         new_lines.append(updated)
@@ -94,4 +99,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
