@@ -1,7 +1,11 @@
 student_id,student_name,hw_id,submission_path,completeness_score,requirement_score,technical_score,result_score,evidence_score,penalty_score,total_score,evidence_level,manual_review_needed,deduction_summary,grader,graded_at
+111550109,黃琮仁,hw5,submissions/hw5/renamed/hw5_111550109_01_hw5-acc98.ipynb,10,28,30,15,10,0,93,B,no,CODE_INCOMPLETE;WEAK_AUDIT_EVIDENCE,Jason,2026-04-20T19:35:57+08:00
+112654017,蕭景升,hw5,submissions/hw5/renamed/hw5_112654017_01_04-testing-hw5-112654017.ipynb,10,18,25,15,10,0,78,B,no,NO_HYPERPARAMETER_SEARCH_EVIDENCE;CODE_INCOMPLETE;TEST_PIPELINE_UNCLEAR;WEAK_AUDIT_EVIDENCE,Jason,2026-04-20T19:35:57+08:00
 113304030,鄭丞言,hw5,submissions/hw5/renamed/hw5_113304030_01_homework-5-redone.ipynb,10,30,30,14,15,0,99,A,no,ACCURACY_BELOW_TARGET,Jason,2026-04-20T19:27:17+08:00
+113350014,凃宏諭,hw5,submissions/hw5/renamed/hw5_113350014_01_113350014-hw5.ipynb,10,24,23,15,10,0,82,B,no,CODE_INCOMPLETE;NO_HYPERPARAMETER_SEARCH_EVIDENCE;WEAK_AUDIT_EVIDENCE,Jason,2026-04-20T19:35:57+08:00
 214952033,陳奕樺,hw5,submissions/hw5/renamed/hw5_214952033_01_hw5.ipynb,10,28,24,8,10,0,80,B,no,CODE_INCOMPLETE;TEST_PIPELINE_UNCLEAR;ACCURACY_BELOW_TARGET;WEAK_AUDIT_EVIDENCE,Jason,2026-04-20T19:27:17+08:00
 314261001,沈恩佑,hw5,submissions/hw5/renamed/hw5_314261001_01_hw5.ipynb,10,30,30,15,15,0,100,A,no,,Jason,2026-04-20T19:31:45+08:00
+314261002,洪至寬,hw5,submissions/hw5/renamed/hw5_314261002_01_hw5.ipynb,10,12,22,9,10,0,63,B,no,NO_HYPERPARAMETER_SEARCH_EVIDENCE;CODE_INCOMPLETE;ACCURACY_BELOW_TARGET;WEAK_AUDIT_EVIDENCE,Jason,2026-04-20T19:35:57+08:00
 314261024,李昀昇,hw5,submissions/hw5/renamed/hw5_314261024_01_homework-5.ipynb,10,30,30,15,15,0,100,A,no,,Jason,2026-04-20T19:31:45+08:00
 314264009,張庭榮,hw5,submissions/hw5/renamed/hw5_314264009_01_homework-5.ipynb,10,30,30,14,10,0,94,B,no,ACCURACY_BELOW_TARGET;WEAK_AUDIT_EVIDENCE,Jason,2026-04-20T19:27:17+08:00
 314264011,許浩哲,hw5,submissions/hw5/renamed/hw5_314264011_01_314264011-hw-5.ipynb,10,30,26,15,15,0,96,A,no,NO_HYPERPARAMETER_SEARCH_EVIDENCE,Jason,2026-04-20T19:23:06+08:00
