@@ -57,6 +57,31 @@ def average(rows: list[dict[str, str]], column: str) -> str:
     return f"{sum(number(row.get(column, '')) for row in rows) / len(rows):.2f}"
 
 
+def policy_issues(homework: str) -> list[str]:
+    """Return standing instructor questions that affect release policy.
+
+    These are intentionally conservative: the reports should surface policy
+    ambiguity without reopening every individual score by default.
+    """
+    if homework == "hw5":
+        return [
+            "Confirm whether grading should be based on submitted evidence only, or whether TAs must rerun notebooks before release.",
+            "Confirm whether a submission that reaches 98% but has weak or missing hyperparameter-search evidence should keep the current configuration/evidence deductions.",
+            "Confirm the standardized treatment for students who tune on, split, or partially evaluate the official MNIST test set; current grading applies TEST_PIPELINE_UNCLEAR rather than a release hold.",
+            "Confirm accepted submission evidence formats: notebook outputs, scripts, PDF reports, screenshots, or combinations.",
+            "Confirm late-policy handling before importing final grades into the LMS.",
+        ]
+    if homework == "hw6":
+        return [
+            "Confirm accepted computational graph formats: separate image/PDF, rendered notebook output, markdown diagram, text-only source cell, or code comments.",
+            "Confirm the hidden-layer interpretation: current grading treats the requirement as three hidden fully connected layers total after convolution/pooling, because HW6 asks for two more hidden layers.",
+            "Confirm whether external frameworks such as PyTorch should receive full credit when architecture, momentum, graph, result, and visualization evidence are present.",
+            "Confirm that dense non-CNN submissions should not receive full architecture/filter/feature-map credit even if they reach the accuracy target.",
+            "Confirm late-policy handling before importing final grades into the LMS.",
+        ]
+    return ["Confirm homework-specific policy questions before score release."]
+
+
 def report_text(homework: str, scores: list[dict[str, str]], deductions: list[dict[str, str]], instructor: bool) -> str:
     title = "Instructor Report" if instructor else "Audit Report"
     totals = [number(row.get("total_score", "")) for row in scores]
@@ -100,7 +125,9 @@ def report_text(homework: str, scores: list[dict[str, str]], deductions: list[di
     else:
         lines.append("- none recorded")
 
-    lines += ["", "## Policy Issues Needing Instructor Decision", "", "- TODO"]
+    lines += ["", "## Policy Issues Needing Instructor Decision", ""]
+    for issue in policy_issues(homework):
+        lines.append(f"- {issue}")
     if not instructor:
         lines += ["", "## Audit Sources", "", f"- `grading/{homework}/scores.csv`", f"- `grading/{homework}/deduction_log.csv`", f"- `grading/{homework}/evidence.csv`"]
     return "\n".join(lines) + "\n"

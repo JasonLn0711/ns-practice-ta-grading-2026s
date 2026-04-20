@@ -1,6 +1,6 @@
 # HW6 Audit Report
 
-Generated: 2026-04-20T20:08:16
+Generated: 2026-04-20T20:09:51
 
 ## Overview
 
@@ -36,7 +36,11 @@ Generated: 2026-04-20T20:08:16
 
 ## Policy Issues Needing Instructor Decision
 
-- TODO
+- Confirm accepted computational graph formats: separate image/PDF, rendered notebook output, markdown diagram, text-only source cell, or code comments.
+- Confirm the hidden-layer interpretation: current grading treats the requirement as three hidden fully connected layers total after convolution/pooling, because HW6 asks for two more hidden layers.
+- Confirm whether external frameworks such as PyTorch should receive full credit when architecture, momentum, graph, result, and visualization evidence are present.
+- Confirm that dense non-CNN submissions should not receive full architecture/filter/feature-map credit even if they reach the accuracy target.
+- Confirm late-policy handling before importing final grades into the LMS.
 
 ## Audit Sources
 

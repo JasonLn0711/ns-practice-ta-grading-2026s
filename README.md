@@ -27,7 +27,9 @@ not based on vague impression. Each non-full score should trace to:
 9. Record deductions in `grading/<hw>/deduction_log.csv`.
 10. Update the per-student note in `grading/<hw>/student_notes/`.
 11. Run `scripts/validate_grading_records.py`.
-12. Generate feedback and reports before releasing scores.
+12. Build audit and instructor reports with `scripts/build_audit_report.py`.
+13. Review `reports/release_readiness_review.md` before releasing scores.
+14. Generate student-facing feedback only after instructor policy questions are resolved.
 
 ## Where Things Go
 
@@ -104,10 +106,12 @@ summaries. Humans must decide:
 - Confirm the rubric version.
 - Confirm late-policy handling.
 - Review every `manual_review_needed=yes` row.
+- Review `reports/release_readiness_review.md` for instructor policy questions.
 - Confirm no student received a custom standard.
 - Ensure every deduction has a tag and reason.
 - Run `scripts/validate_grading_records.py --homework hw5` and repeat for HW6.
 - Build the audit and instructor reports.
+- If policy changes, adjust only the affected rows and record a new commit.
 - Keep raw submissions and bulky binaries out of Git.
 
 ## Remote
