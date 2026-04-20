@@ -13,3 +13,14 @@ Use this for TA work summaries only. Do not store detailed student-sensitive rev
 - E3 submission ZIP/PDF import workflow added. In this standalone private repo,
   version `student_file_map.csv` and submission `rename_map.csv` for auditability;
   keep raw, renamed, and extracted submission files ignored.
+- HW5 grading completed for `21` submissions with score rows, evidence rows,
+  deduction logs, per-student notes, audit reports, and validation.
+- HW6 first-pass single-score grading completed and preserved as historical
+  baseline in `grading/hw6/scores.csv`.
+- HW6 grading revised into independent `HW6(code)` and `HW6(figure)` scores.
+  Current dual-score outputs: `21` graded submissions, `0` manual-review flags,
+  `4` workbook students not graded due to missing reliable HW6 evidence,
+  average code score `88.90`, and average figure score `78.38`.
+- HW6 workbook write-back draft generated as an ignored local copy. Original
+  workbook remains untouched; scored workbook is pending instructor approval
+  before release/import.
