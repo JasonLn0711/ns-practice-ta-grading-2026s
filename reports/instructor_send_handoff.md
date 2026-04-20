@@ -43,6 +43,12 @@ instructor confirms policy and late-policy handling.
 
 ## Default Files To Attach
 
+Preferred single attachment for a manual email client:
+
+- `release_packets/instructor_confirmation_2026-04-20/instructor_confirmation_packet_2026-04-20.zip`
+
+If sending individual files instead, attach:
+
 - `instructor_policy_confirmation_packet.md`
 - `hw5_instructor_report.md`
 - `hw6_instructor_report.md`

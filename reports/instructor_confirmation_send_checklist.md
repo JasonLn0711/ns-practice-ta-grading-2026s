@@ -2,7 +2,7 @@
 
 Generated: `2026-04-20`
 Prepared by: `Jason`
-Status: `ready to send / not sent`
+Status: `recipient confirmed / ready for manual send / not sent`
 
 ## Purpose
 
@@ -24,6 +24,15 @@ Use the local packet folder first:
 ```text
 release_packets/instructor_confirmation_2026-04-20/
 ```
+
+For a manual email client, the simplest attachment is the ignored local zip:
+
+```text
+release_packets/instructor_confirmation_2026-04-20/instructor_confirmation_packet_2026-04-20.zip
+```
+
+If a zip attachment is not appropriate, attach the individual sanitized files
+listed below instead.
 
 It contains copies of these approved summary/policy files:
 
@@ -143,6 +152,7 @@ asks for them and the channel is appropriate.
 
 - Instructor policy confirmation is pending.
 - Late policy is pending.
-- Instructor recipient email is not recorded in this repo.
+- Instructor recipient email is confirmed, but no completed send event is
+  recorded yet.
 - Student-facing release should not happen until the instructor reply is logged.
 - Any policy change must be traceable in score rows, deduction notes, and commit history.

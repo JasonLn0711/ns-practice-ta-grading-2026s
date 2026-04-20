@@ -70,6 +70,9 @@ Pre-send verification:
   confirmation. The connector returned `ACCESS_TOKEN_SCOPE_INSUFFICIENT`, so no
   draft was created and no email was sent. Manual send through Gmail web UI or
   another authorized mail client is required.
+- 2026-04-20: Sanitized manual-send packet is available as
+  `release_packets/instructor_confirmation_2026-04-20/instructor_confirmation_packet_2026-04-20.zip`.
+  This is a local ignored release artifact; it has not been sent yet.
 
 ```text
 Date sent:
