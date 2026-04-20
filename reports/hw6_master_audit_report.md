@@ -1,6 +1,6 @@
 # HW6 Master Dual-Score Audit Report
 
-Generated: `2026-04-20T21:07:23+08:00`
+Generated: `2026-04-20T22:19:56+08:00`
 
 ## Summary
 
@@ -9,15 +9,15 @@ Generated: `2026-04-20T21:07:23+08:00`
 - Graded with manual review flag: 0
 - Not graded due to missing evidence: 4
 - Unmatched in workbook: 0
-- Average HW6(code): 88.38
-- Average HW6(figure): 78.38
+- Average HW6(code): 89.48
+- Average HW6(figure): 80.62
 
 ## Evidence Levels - Code
 
 | Evidence level | Count |
 | --- | ---: |
-| `A` | 13 |
-| `B` | 8 |
+| `A` | 14 |
+| `B` | 7 |
 | `C` | 0 |
 | `D` | 0 |
 
@@ -25,8 +25,8 @@ Generated: `2026-04-20T21:07:23+08:00`
 
 | Evidence level | Count |
 | --- | ---: |
-| `A` | 11 |
-| `B` | 9 |
+| `A` | 12 |
+| `B` | 8 |
 | `C` | 1 |
 | `D` | 0 |
 
@@ -35,25 +35,25 @@ Generated: `2026-04-20T21:07:23+08:00`
 | Category | Average |
 | --- | ---: |
 | `architecture_score` | 23.38 |
-| `graph_code_alignment_score` | 12.43 |
+| `graph_code_alignment_score` | 13.38 |
 | `training_method_score` | 24.38 |
 | `result_score` | 19.38 |
-| `evidence_score` | 8.81 |
+| `evidence_score` | 8.95 |
 
 ## Figure Score Distribution
 
 | Category | Average |
 | --- | ---: |
-| `graph_score` | 24.14 |
+| `graph_score` | 26.05 |
 | `filters_score` | 18.48 |
 | `feature_maps_score` | 24.24 |
-| `figure_evidence_score` | 11.52 |
+| `figure_evidence_score` | 11.86 |
 
 ## Most Common Code Deduction Reasons
 
 - `CODE_ACCURACY_BELOW_TARGET`: 1
 - `CODE_ARCH_REPLACEMENT_INCOMPLETE`: 4
-- `CODE_GRAPH_NOTATION_MISMATCH`: 11
+- `CODE_GRAPH_NOTATION_MISMATCH`: 10
 - `CODE_MOMENTUM_MISSING`: 1
 - `CODE_RESULT_BAND_BELOW_FULL`: 6
 
@@ -64,8 +64,8 @@ Generated: `2026-04-20T21:07:23+08:00`
 - `FIG_FILTERS_UNCLEAR`: 1
 - `FIG_GRAPH_CODE_MISMATCH`: 1
 - `FIG_GRAPH_INCOMPLETE`: 3
-- `FIG_GRAPH_MISSING`: 7
-- `FIG_LABELING_INSUFFICIENT`: 11
+- `FIG_GRAPH_MISSING`: 6
+- `FIG_LABELING_INSUFFICIENT`: 10
 
 ## Unresolved Policy Issues
 

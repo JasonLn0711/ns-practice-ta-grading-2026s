@@ -1,21 +1,21 @@
 # HW6(figure) Audit Report
 
-Generated: `2026-04-20T21:07:23+08:00`
+Generated: `2026-04-20T22:19:56+08:00`
 
 ## Summary
 
 - Total submissions represented in score file: 21
 - Submissions graded: 21
-- Complete Level A evidence rows: 11
+- Complete Level A evidence rows: 12
 - Manual review rows: 0
-- Average HW6(figure) score: 78.38
+- Average HW6(figure) score: 80.62
 
 ## Evidence Levels
 
 | Evidence level | Count |
 | --- | ---: |
-| `A` | 11 |
-| `B` | 9 |
+| `A` | 12 |
+| `B` | 8 |
 | `C` | 1 |
 | `D` | 0 |
 
@@ -23,10 +23,10 @@ Generated: `2026-04-20T21:07:23+08:00`
 
 | Category | Average |
 | --- | ---: |
-| `graph_score` | 24.14 |
+| `graph_score` | 26.05 |
 | `filters_score` | 18.48 |
 | `feature_maps_score` | 24.24 |
-| `figure_evidence_score` | 11.52 |
+| `figure_evidence_score` | 11.86 |
 
 ## Common Figure Deductions
 
@@ -35,8 +35,8 @@ Generated: `2026-04-20T21:07:23+08:00`
 - `FIG_FILTERS_UNCLEAR`: 1
 - `FIG_GRAPH_CODE_MISMATCH`: 1
 - `FIG_GRAPH_INCOMPLETE`: 3
-- `FIG_GRAPH_MISSING`: 7
-- `FIG_LABELING_INSUFFICIENT`: 11
+- `FIG_GRAPH_MISSING`: 6
+- `FIG_LABELING_INSUFFICIENT`: 10
 
 ## Suspicious Patterns
 

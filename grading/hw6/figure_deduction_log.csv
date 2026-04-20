@@ -21,7 +21,5 @@ student_name,student_id,score_type,deduction_tag,category,points_deducted,eviden
 方禹棠,314264029,figure,FIG_LABELING_INSUFFICIENT,figure_evidence_score,5,submissions/hw6/renamed/hw6_314264029_01_hw6.ipynb,Visuals are auditable but not tied to CNN deliverables.,no,Jason,2026-04-20T21:06:10+08:00
 陳叡儀,314351006,figure,FIG_GRAPH_CODE_MISMATCH,graph_score,15,submissions/hw6/renamed,Graph shows a different hidden-layer count from the submitted code.,no,Jason,2026-04-20T21:06:10+08:00
 陳叡儀,314351006,figure,FIG_LABELING_INSUFFICIENT,figure_evidence_score,5,submissions/hw6/renamed,Graph/code mismatch caps figure explainability.,no,Jason,2026-04-20T21:06:10+08:00
-林煜樺,514660010,figure,FIG_GRAPH_MISSING,graph_score,40,submissions/hw6/renamed/hw6_514660010_01_homework-6.ipynb,No computational graph artifact was found.,no,Jason,2026-04-20T21:06:10+08:00
-林煜樺,514660010,figure,FIG_LABELING_INSUFFICIENT,figure_evidence_score,7,submissions/hw6/renamed/hw6_514660010_01_homework-6.ipynb,"Visualization evidence is present, but graph traceability is absent.",no,Jason,2026-04-20T21:06:10+08:00
 蔡宇量,514661019,figure,FIG_GRAPH_INCOMPLETE,graph_score,10,submissions/hw6/renamed/hw6_514661019_01_homework-6-514661019.ipynb,Graph evidence appears as source comments rather than a rendered slide-style graph artifact.,no,Jason,2026-04-20T21:06:10+08:00
 蔡宇量,514661019,figure,FIG_LABELING_INSUFFICIENT,figure_evidence_score,5,submissions/hw6/renamed/hw6_514661019_01_homework-6-514661019.ipynb,Source-comment graph format caps figure explainability.,no,Jason,2026-04-20T21:06:10+08:00
