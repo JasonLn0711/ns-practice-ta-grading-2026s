@@ -13,7 +13,11 @@ for them through an appropriate channel.
 
 ## Recipient
 
-TODO: add instructor email address before sending.
+TODO: add confirmed instructor email address before sending.
+
+Local source check: the inspected syllabus confirms lecturer `吳育德` but does
+not expose a reliable email address. Confirm the address from E3, a prior course
+email, or the instructor directly before sending.
 
 ## Subject
 

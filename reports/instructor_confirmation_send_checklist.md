@@ -61,6 +61,9 @@ through a secure channel:
 
 ## Pre-Send Steps
 
+- [ ] Confirm the instructor recipient address from E3, a prior course email, or
+  the instructor directly. The inspected syllabus confirms lecturer `吳育德` but
+  does not expose a reliable email address.
 - [ ] Open `reports/instructor_confirmation_outbox.md`.
 - [ ] If needed, compare it against `reports/instructor_email_draft.md`.
 - [ ] Confirm the recipient and course name.

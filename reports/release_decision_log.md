@@ -56,6 +56,13 @@ Notes:
 Use this section after sending the confirmation message. Do not mark decisions
 approved until the instructor reply is received.
 
+Pre-send verification:
+
+- 2026-04-20: Syllabus text confirms lecturer `吳育德` but does not expose a
+  reliable email address. The instructor packet remains ready, but sending is
+  blocked until the recipient address is confirmed from E3, a prior course
+  email, or the instructor directly.
+
 ```text
 Date sent:
 Recipient:

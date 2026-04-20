@@ -21,6 +21,7 @@ REPORT_PATH = ROOT / "reports" / "final_release_gate_report.md"
 REQUIRED_FILES = [
     "reports/instructor_confirmation_outbox.md",
     "reports/instructor_confirmation_send_checklist.md",
+    "reports/instructor_send_handoff.md",
     "reports/instructor_packet_build_report.md",
     "reports/post_instructor_reply_runbook.md",
     "reports/release_decision_log.md",
@@ -83,7 +84,7 @@ def run(command: list[str]) -> tuple[int, str]:
         stderr=subprocess.STDOUT,
         check=False,
     )
-    return completed.returncode, completed.stdout.strip()
+    return completed.returncode, completed.stdout.rstrip()
 
 
 def status(ok: bool, blocked: bool = False) -> str:
@@ -197,6 +198,23 @@ def check_instructor_packet() -> CheckResult:
     return CheckResult("Instructor packet", "pass", f"{len(PACKET_FILES)} files present and ignored")
 
 
+def check_instructor_recipient() -> CheckResult:
+    path = ROOT / "reports" / "instructor_confirmation_outbox.md"
+    if not path.exists():
+        return CheckResult("Instructor recipient", "fail", "missing instructor confirmation outbox")
+    text = path.read_text(encoding="utf-8")
+    recipient_section = text.partition("## Recipient")[2].partition("## Subject")[0]
+    has_todo = "TODO" in recipient_section
+    has_email = "@" in recipient_section
+    if has_todo or not has_email:
+        return CheckResult(
+            "Instructor recipient",
+            "blocked",
+            "recipient email not confirmed in outbox",
+        )
+    return CheckResult("Instructor recipient", "pass", "recipient email recorded in outbox")
+
+
 def render_report(results: list[CheckResult]) -> str:
     blockers = [result for result in results if result.status == "blocked"]
     failures = [result for result in results if result.status == "fail"]
@@ -237,7 +255,8 @@ def render_report(results: list[CheckResult]) -> str:
         "",
         "## Next Action",
         "",
-        "- If the only blockers are instructor decisions, send `reports/instructor_confirmation_outbox.md`.",
+        "- If the instructor recipient is still blocked, confirm the address from E3, a prior course email, or the instructor directly.",
+        "- Once the recipient is confirmed, send `reports/instructor_confirmation_outbox.md` with only the sanitized packet files.",
         "- After the instructor replies, use `reports/post_instructor_reply_runbook.md`.",
         "- Re-run this script after recording the reply and applying any policy changes.",
         "",
@@ -252,6 +271,7 @@ def main() -> int:
     results.extend(check_validations())
     results.append(check_workbook_output())
     results.append(check_instructor_packet())
+    results.append(check_instructor_recipient())
     results.append(check_forbidden_tracked_files())
     results.append(check_git_status())
     results.extend(check_decision_log())
