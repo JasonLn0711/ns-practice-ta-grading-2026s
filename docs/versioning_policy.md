@@ -31,6 +31,13 @@ can be traced to evidence, rubric categories, and written deduction reasons.
 Ignoring raw submissions and bulky binaries reduces accidental exposure and
 keeps Git history reviewable.
 
+## License And Access
+
+See `../LICENSE`. This repository is an all-rights-reserved private grading
+workspace. The license does not relicense student submissions, course materials,
+workbook data, or institutional records. Do not publish or push this repository
+unless the remote is confirmed private and authorized for course grading use.
+
 ## Operational Rule
 
 Before committing, run:
