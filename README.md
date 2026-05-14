@@ -1,5 +1,6 @@
 # NS Practice TA Grading 2026 Spring
 
+<img src="http://estruyf-github.azurewebsites.net/api/VisitorHit?user=JasonLn0711&repo=ns-practice-ta-grading-2026s&countColor=%237B1E7B" alt="Visitor count"/>
 Standalone local Git repo for Jason's HW5/HW6 TA grading work.
 
 ## Purpose
